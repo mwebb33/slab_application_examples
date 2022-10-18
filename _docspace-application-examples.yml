@@ -1,0 +1,13 @@
+objectType: docSpace
+id: application-examples
+version: "1.0.0"
+curators:
+  - curators@silabs.com
+title: "Application Example"
+menu:
+  items:
+    - docleaf://ae-overview/1.0.0
+    - docleaf://ae-getting-started/1.0.0
+    - docleaf://ae-sample-project-contents/1.0.0
+    - docleaf://ae-project-readmes/1.0.0
+    - docleaf://ae-additional-topics/1.0.0
