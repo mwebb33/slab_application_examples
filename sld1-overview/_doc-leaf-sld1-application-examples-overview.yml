@@ -84,7 +84,7 @@ title: "Overview"
 # type: string
 # required: false
 #
-description: "SCL landing page"
+description: "AE landing page"
 
 # Path to a folder containing the source content, relative to the location of this
 # config file.
@@ -116,7 +116,7 @@ root: ./index.md
 # type: DocLeafMenu
 # required: false
 #
-menu:
+#menu:
   # A set of links which appear as "L1" Menu Items. Each Items' key will be used
   # as the title, and the value as the path to the source file. The path will
   # be resolved relative to the DocLeaf's `source.dir`.
@@ -126,5 +126,5 @@ menu:
   # type: Map<string, string>
   # required: false
   #
-  items:
-    - Introduction: ./01-introduction.md
+#  items:
+#    - Introduction: ./01-introduction.md
