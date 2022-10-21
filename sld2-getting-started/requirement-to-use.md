@@ -44,11 +44,53 @@ Simplicity Studio is the core development environment designed to support the Si
 
 ### Software Development Kit
 
- > GSDK **v4.x.x** version or higher is required.
+The required GSDK version is described in the readme files for each project.
+
+ > In general, GSDK **v4.x.x** version or higher is required to compile and run the examples.
 
  Some of the examples require 
  [Third Party Hardware Driver GSDK Extension](https://github.com/SiliconLabs/platform_hardware_drivers_sdk_extensions).
 
 ## Setup
 
-### How to connect your board to MikroE Click and SparkFun QWIIC boards
+Silabs development kits can be connected to any third party shield via simple wiring, however most of the boards are supporting quick and easy connectivity via Qwiic and mikroBUS connectors.
+
+### Mikroe Click Boards
+
+MikroElektronika Click boards can be connected to host controllers via the [mikroBUS](https://download.mikroe.com/documents/standards/mikrobus/mikrobus-standard-specification-v200.pdf) connectors, see the pinout specification below.
+
+[![mikroBUS](doc/mikroe_microbus.png)](https://download.mikroe.com/documents/standards/mikrobus/mikrobus-standard-specification-v200.pdf)
+
+
+### Sparkfun [Qwiic]() or Adafruit [STEMMA QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt) Boards
+
+The sparkfun Qwiic and Adafruit STEMMA QT capable boards using the same 4 pins - JST SH 1.0mm pitch connectors to provide quick and easy I2C connectivity between development kits and third party boards.
+
+![QwiicCableConnector](doc/qwiic_cable_connector.png)
+
+All Qwiic/STEMMA QT cables have the following color scheme and arrangement:
+- Black = GND
+- Red = 3.3V
+- Blue = SDA
+- Yellow = SCL
+
+### BGM220 Bluetooth Module Explorer Kit
+
+![BGM220PmikroBUS](doc/bgm220p_connectors.png)
+
+The kit features support for hardware add-on boards via a mikroBus socket and a Qwiic connector. The hardware add-on support allows developers to create and prototype applications using a virtually endless combination of off-the-shelf boards from mikroE, sparkfun, AdaFruit, and Seeed Studios.
+
+![MikroeSilabsClickShield](doc/bgm220p_connection.png)
+
+
+### EFR32xG22 Wireless Gecko Starter Kit/ Thunderboard Sense 2 / EFR32xG24 Dev Kit
+
+Mikroe provides a [Silabs Click Shield](https://www.mikroe.com/silabs-click-shield) for easily connecting Silabs development kits from the Thunderboard family or any other Silabs wireless or MCU starter kit through the expansion header (EXP) to the Mikroe Click boards.
+
+Sparkfun Qwiic/Adafruit STEMMA QT boards also can be connected to these development kits through the expansion header.
+
+![MikroeSilabsClickShieldOverview](doc/mikroe_click_shield_overview.png)
+
+Mikroe Click Temperature sensor board connected to a Thunderboard Sense 2 via a Silabs Click shield. 
+
+![MikroeSilabsClickShield](doc/mikroe_click_shield.png)
