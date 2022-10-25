@@ -128,5 +128,5 @@ menu:
   #
   items:
     - Requirements: ./requirement-to-use.md
-    - How is it organized: ./how-is-it-organized.md
-    - How to use: ./how-do-you-use-it.md
+    - Repositories: ./how-is-it-organized.md
+    - Usage: ./how-do-you-use-it.md
