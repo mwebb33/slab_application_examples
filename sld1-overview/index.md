@@ -4,7 +4,7 @@
 Strong emphases is put on a building block concept, where these can be combined and people can experiment even more complex applications reusing these sample codes. The aim is to extend the operation to 3rd party HW platforms / ecosystems as well, not just supporting our development kits.
 
 
-![AEP](doc/aep_layers.png)
+![AEP](doc/aep-layers.png)
 
 **As the go-to provider for IoT solutions, we provide developers at all levels with an easy to use, accessible application examples they can use to speed their developments and get to market faster.**
 
@@ -31,7 +31,7 @@ Virtual applications are either wireless stack applications or mostly wireless s
 Complex virtual applications typically provide solutions for popular IoT products, like smart door lock, speech controlling and so on.
 
 
-![AEP](doc/virtual_app.png)
+![AEP](doc/virtual-app.png)
 
 
 ## Example - Bluetooth Ethernet Gateway Application
@@ -42,13 +42,13 @@ This project aims to implement a simple Bluetooth-Ethernet Thin Gateway, the sen
 
 When the device in connected to a sensor peripheral the gateway reads the BLE characteristics to retrieve the measured temperature and humidity. The measurements results are uploaded to dweet.io via the Ethernet Click board.
 
-![AEP](doc/example/overview_eth_ble_gateway.png)
+![AEP](doc/example/overview-eth-ble-gateway.png)
 
 ### Hardware Setup
 
 The ETH WIZ Click can be plugged into the BGM220 Bluetooth Module Explorer Kit via the mikroBus socket.
 
-![AEP](doc/example/hardware_setup.png)
+![AEP](doc/example/hardware-setup.png)
 
 ### Cloud Service
 

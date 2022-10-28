@@ -7,6 +7,6 @@ The appplication examples are located on Github.
 [https://github.com/SiliconLabs/application_examples](https://github.com/SiliconLabs/application_examples)
 
 ## Table of contents
-- [TOC by Hardware Driver Class](toc_hwdrv.md)
-- [TOC by Market Segment Application](toc_msar.md)
-- [TOC by Wireless Use Case](toc_wl_use_case.md)
+- [TOC by Hardware Driver Class](toc-hwdrv.md)
+- [TOC by Market Segment Application](toc-msar.md)
+- [TOC by Wireless Use Case](toc-wl-use-case.md)

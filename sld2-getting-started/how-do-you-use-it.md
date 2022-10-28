@@ -29,15 +29,15 @@ Simplicity Studio projects typically stored under the SimplicityStudio folder in
 
 * **STEP 2** Select a folder containing *.sls file(s). Select a project from the detected projects list and click on **Next**.
 
-  ![Import](doc/studio/import_browse.png)
+  ![Import](doc/studio/import-browse.png)
 
 * **STEP 3** Click on **Next**
   
-  ![Import](doc/studio/import_finish.png)
+  ![Import](doc/studio/import-finish.png)
 
 * **STEP 4** Type a name to the new project or keep the original naming. Click on **Finish**.
 
-  ![Import](doc/studio/import_last_screen.png)
+  ![Import](doc/studio/import-last-screen.png)
 
 The selected Simplicity Studio project is imported into your workspace. You can compile the project, and run the executable on a real hardware like a development kit.
 
@@ -48,7 +48,7 @@ You can find the Third Party Hardware Drivers GSDK Extension at Github, as a fri
 
 You can follow this step-by-step guide to install and use the extension or watch a guideline video showing the same steps.
 
-[![GuidelineVideo](doc/studio/sdke/sdkeDemoVideo.png)](https://TODO)
+[![GuidelineVideo](doc/studio/sdke/sdke-demo-video.png)](https://TODO)
 
 
 * **STEP 1** Clone Third Party Hardware Drivers repository from Github
@@ -70,11 +70,11 @@ You can follow this step-by-step guide to install and use the extension or watch
 
   The SDK Extension will be detected in the repository folder.
 
-  ![SelectExtension](doc/studio/sdke/addExtension.png)
+  ![SelectExtension](doc/studio/sdke/add-extension.png)
 
 * **STEP 5** Click on the **Trust** button on the Verify SDK Extension dialog
 
-  ![TrustSDKExtension](doc/studio/sdke/trustSDKextension.png)
+  ![TrustSDKExtension](doc/studio/sdke/sdke-trust.png)
 
 * **STEP 6** The SDK Extension successfully installed, click on **Apply and Close**
 
@@ -93,7 +93,7 @@ The Third Party Hardware Drivers extension provides example project templates fo
 * **STEP 3** Filter examples by typing "third" or "Third Party" in the "filter on keywords" input 
 * **STEP 4** Select an example project from the resources and click on the **Create** button.
 
-  ![LauncherCreateProject](doc/studio/sdke/launcherExamples.png)
+  ![LauncherCreateProject](doc/studio/sdke/launcher-examples.png)
 
 * **STEP 5** Follow the steps in the New Project Wizard dialog. 
 
@@ -106,16 +106,16 @@ Launcher creates a new project based on the selected template, this project cont
 
 * **STEP 2** Select **SOFTWARE COMPONENTS** and search with "third" keyword in the Search keywords, component's name input
 
-  ![SoftwareComponents](doc/studio/sdke/softwareComponents.png)
+  ![SoftwareComponents](doc/studio/sdke/sw-components.png)
 
 
 * **STEP 2** Select a driver from the list by clicking on it, click on the **Install**
 
-  ![SoftwareComponentsInstall](doc/studio/sdke/swcompInstall.png)
+  ![SoftwareComponentsInstall](doc/studio/sdke/sw-components-installed.png)
 
 The selected hardware driver is installed to your project. The installed driver's API can be found in the extension's public folder.
 
-  ![PublicAPI](doc/studio/sdke/driverAPI.png)
+  ![PublicAPI](doc/studio/sdke/driver-api.png)
 
 Public header files should be included in your application for each installed driver.
 

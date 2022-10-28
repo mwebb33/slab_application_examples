@@ -26,9 +26,9 @@ The hardware drivers and some of the virtual applications require third party ha
 
 |Supplier|Link|
 | --- | --- |
-|![Mikroe](doc/mikroe_logo.png)|[https://www.mikroe.com](https://www.mikroe.com)|
-|![Sparkfun](doc/sparkfun_logo.png)|[https://www.sparkfun.com](https://www.sparkfun.com)|
-|![Adafruit](doc/adafruit_logo.png)|[https://www.adafruit.com](https://www.adafruit.com)|
+|![Mikroe](doc/mikroe-logo.png)|[https://www.mikroe.com](https://www.mikroe.com)|
+|![Sparkfun](doc/sparkfun-logo.png)|[https://www.sparkfun.com](https://www.sparkfun.com)|
+|![Adafruit](doc/adafruit-logo.png)|[https://www.adafruit.com](https://www.adafruit.com)|
 
 
 ## Software
@@ -59,14 +59,14 @@ Silabs development kits can be connected to any third party shield via simple wi
 
 MikroElektronika Click boards can be connected to host controllers via the [mikroBUS](https://download.mikroe.com/documents/standards/mikrobus/mikrobus-standard-specification-v200.pdf) connectors, see the pinout specification below.
 
-[![mikroBUS](doc/mikroe_microbus.png)](https://download.mikroe.com/documents/standards/mikrobus/mikrobus-standard-specification-v200.pdf)
+[![mikroBUS](doc/mikroe-microbus.png)](https://download.mikroe.com/documents/standards/mikrobus/mikrobus-standard-specification-v200.pdf)
 
 
 ### Sparkfun [Qwiic]() or Adafruit [STEMMA QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt) Boards
 
 The sparkfun Qwiic and Adafruit STEMMA QT capable boards using the same 4 pins - JST SH 1.0mm pitch connectors to provide quick and easy I2C connectivity between development kits and third party boards.
 
-![QwiicCableConnector](doc/qwiic_cable_connector.png)
+![QwiicCableConnector](doc/qwiic-cable-connector.png)
 
 All Qwiic/STEMMA QT cables have the following color scheme and arrangement:
 - Black = GND
@@ -76,11 +76,11 @@ All Qwiic/STEMMA QT cables have the following color scheme and arrangement:
 
 ### BGM220 Bluetooth Module Explorer Kit
 
-![BGM220PmikroBUS](doc/bgm220p_connectors.png)
+![BGM220PmikroBUS](doc/bgm220p-connectors.png)
 
 The kit features support for hardware add-on boards via a mikroBus socket and a Qwiic connector. The hardware add-on support allows developers to create and prototype applications using a virtually endless combination of off-the-shelf boards from mikroE, sparkfun, AdaFruit, and Seeed Studios.
 
-![MikroeSilabsClickShield](doc/bgm220p_connection.png)
+![MikroeSilabsClickShield](doc/bgm220p-connection.png)
 
 
 ### EFR32xG22 Wireless Gecko Starter Kit/ Thunderboard Sense 2 / EFR32xG24 Dev Kit
@@ -89,8 +89,8 @@ Mikroe provides a [Silabs Click Shield](https://www.mikroe.com/silabs-click-shie
 
 Sparkfun Qwiic/Adafruit STEMMA QT boards also can be connected to these development kits through the expansion header.
 
-![MikroeSilabsClickShieldOverview](doc/mikroe_click_shield_overview.png)
+![MikroeSilabsClickShieldOverview](doc/mikroe-click-shield-overview.png)
 
 Mikroe Click Temperature sensor board connected to a Thunderboard Sense 2 via a Silabs Click shield. 
 
-![MikroeSilabsClickShield](doc/mikroe_click_shield.png)
+![MikroeSilabsClickShield](doc/mikroe-click-shield.png)
