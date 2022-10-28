@@ -61,7 +61,8 @@ version: "1.0.0"
 # required: true
 #
 authors:
-    - authors@silabs.com
+    - barna.czukor@silabs.com
+    - daniel.nemeth@silabs.com
 
 # Specifies the type of source DocContent.
 #

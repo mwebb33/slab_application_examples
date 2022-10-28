@@ -23,21 +23,100 @@ Simplicity Studio projects typically stored under the SimplicityStudio folder in
 
 ### Importing *.sls projects
 
-* **[File] -> [Import]**
+* **STEP 1** **[File] -> [Import]**
 
   ![Import](doc/studio/import.png)
-* Select a folder containing *.sls file(s). Select a project from the detected projects list and click on **Next**.
+
+* **STEP 2** Select a folder containing *.sls file(s). Select a project from the detected projects list and click on **Next**.
 
   ![Import](doc/studio/import_browse.png)
 
-* Click on **Next**
+* **STEP 3** Click on **Next**
   
   ![Import](doc/studio/import_finish.png)
 
-* Type a name to the new project or keep the original naming. Click on **Finish**.
+* **STEP 4** Type a name to the new project or keep the original naming. Click on **Finish**.
 
   ![Import](doc/studio/import_last_screen.png)
 
 The selected Simplicity Studio project is imported into your workspace. You can compile the project, and run the executable on a real hardware like a development kit.
 
 ## Adding SDK Extensions for Hardware Drivers
+
+You can find the Third Party Hardware Drivers GSDK Extension at Github, as a frist step you should clone the repository to your local computer. 
+
+
+You can follow this step-by-step guide to install and use the extension or watch a guideline video showing the same steps.
+
+[![GuidelineVideo](doc/studio/sdke/sdkeDemoVideo.png)](https://TODO)
+
+
+* **STEP 1** Clone Third Party Hardware Drivers repository from Github
+
+  It is up to you to choose a folder on your computer to clone the repository into.
+
+  > git clone https://github.com/SiliconLabs/platform_hardware_drivers_sdk_extensions.git
+
+
+* **STEP 2** Open Simplicity Studio and go to Window/Preferences
+
+  ![Preferences](doc/studio/sdke/preferences.png)
+
+* **STEP 3** Go Simplicity Studio/SKDs, select an installed GSDK (version >=4.1.1), click on **Add Extension**
+
+  ![AddSDKExtension](doc/studio/sdke/sdks.png)
+
+* **STEP 4** Select the SDK Extension's location, click on **Ok**
+
+  The SDK Extension will be detected in the repository folder.
+
+  ![SelectExtension](doc/studio/sdke/addExtension.png)
+
+* **STEP 5** Click on the **Trust** button on the Verify SDK Extension dialog
+
+  ![TrustSDKExtension](doc/studio/sdke/trustSDKextension.png)
+
+* **STEP 6** The SDK Extension successfully installed, click on **Apply and Close**
+
+  ![Installed](doc/studio/sdke/installed.png)
+
+### Example Project Templates
+
+The Third Party Hardware Drivers extension provides example project templates for each supported driver.
+
+* **STEP 1** Open the Launcher perspective in Simplicity Studio
+
+  ![LauncherPerspective](doc/studio/sdke/launcher.png)
+
+* **STEP 2** Select a product either in the My Products or in the Debug Adapters dialog
+
+* **STEP 3** Filter examples by typing "third" or "Third Party" in the "filter on keywords" input 
+* **STEP 4** Select an example project from the resources and click on the **Create** button.
+
+  ![LauncherCreateProject](doc/studio/sdke/launcherExamples.png)
+
+* **STEP 5** Follow the steps in the New Project Wizard dialog. 
+
+Launcher creates a new project based on the selected template, this project contains basic example on how your application can integrate a driver using the extension.
+
+
+### Software Components
+
+* **STEP 1** Open a project configuration (The selected perspective should be "Simplicity IDE".).
+
+* **STEP 2** Select **SOFTWARE COMPONENTS** and search with "third" keyword in the Search keywords, component's name input
+
+  ![SoftwareComponents](doc/studio/sdke/softwareComponents.png)
+
+
+* **STEP 2** Select a driver from the list by clicking on it, click on the **Install**
+
+  ![SoftwareComponentsInstall](doc/studio/sdke/swcompInstall.png)
+
+The selected hardware driver is installed to your project. The installed driver's API can be found in the extension's public folder.
+
+  ![PublicAPI](doc/studio/sdke/driverAPI.png)
+
+Public header files should be included in your application for each installed driver.
+
+For further information on how to use drivers in your project see [application example templates](#example-project-templates) in the Launcher.

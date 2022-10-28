@@ -14,7 +14,7 @@ objectType: docLeaf
 # type: string
 # required: true
 #
-id: ae-getting-started
+id: ae-application-examples
 
 # Controls access to this DocLeaf. If 'prerelease', access will be limited
 # to properly authenticated users.
@@ -61,6 +61,7 @@ version: "1.0.0"
 # required: true
 #
 authors:
+    - barna.czukor@silabs.com
     - daniel.nemeth@silabs.com
 
 # Specifies the type of source DocContent.
@@ -76,7 +77,7 @@ contentType: markdown
 # type: string
 # required: true
 #
-title: "Getting Started"
+title: "Application Examples"
 
 # The description of this DocLeaf. Will exist as metadata, but appear publicly
 # in places like Simplicity Studio or silabs.com.
@@ -84,7 +85,7 @@ title: "Getting Started"
 # type: string
 # required: false
 #
-description: "Get stared with SCL resource"
+description: "Contents of AEP by category"
 
 # Path to a folder containing the source content, relative to the location of this
 # config file.
@@ -127,6 +128,6 @@ menu:
   # required: false
   #
   items:
-    - Requirements: ./requirement-to-use.md
-    - Repositories: ./how-is-it-organized.md
-    - Usage: ./how-do-you-use-it.md
+    - TOC by Hardware Driver Class: ./toc_hwdrv.md
+    - TOC by Market Segment Application: ./toc_msar.md
+    - TOC by Wireless Use Case: ./toc_wl_use_case.md
