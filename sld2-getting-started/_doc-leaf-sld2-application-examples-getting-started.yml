@@ -14,7 +14,7 @@ objectType: docLeaf
 # type: string
 # required: true
 #
-id: ae-getting-started
+id: ae-overview
 
 # Controls access to this DocLeaf. If 'prerelease', access will be limited
 # to properly authenticated users.
