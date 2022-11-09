@@ -116,6 +116,10 @@ root: ./index.md
 # type: DocLeafMenu
 # required: false
 #
+
+docSpaceParent: ../_docspace-application-examples.yml
+
+
 menu:
   # A set of links which appear as "L1" Menu Items. Each Items' key will be used
   # as the title, and the value as the path to the source file. The path will
@@ -127,4 +131,4 @@ menu:
   # required: false
   #
   items:
-    - Third Party Hardware Drivers: ./index.md
+    - Third Party Hardware Drivers: ./third-party-hardware-drivers.md

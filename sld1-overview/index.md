@@ -1,7 +1,13 @@
 # Overview
-**Application Examples Program (AEP)** is an umbrella term that includes the different promotion and enablement HW drivers, virtual applications or reference designs. 
+**Application Examples Program (AEP)** is an umbrella term that includes the different promotion and enablement HW drivers, virtual applications or reference designs.
+
+
+[![GithubLogo](doc/github-logo.png)](https://github.com/SiliconLabs/application_examples)
+
+The application examples are hosted at Github [here](https://github.com/SiliconLabs/application_examples).
 
 Strong emphases is put on a building block concept, where these can be combined and people can experiment even more complex applications reusing these sample codes. The aim is to extend the operation to 3rd party HW platforms / ecosystems as well, not just supporting our development kits.
+
 
 
 ![AEP](doc/aep-layers.png)

@@ -15,6 +15,13 @@
 |Thunderboard Sense 2|SLTB004A|[SLTB004A](https://www.silabs.com/development-tools/thunderboard/thunderboard-sense-two-kit?tab=overview)|
 |EFR32xG24 Dev Kit|SLWSTK6021A|[xG24-DK2601B](hhttps://www.silabs.com/development-tools/wireless/efr32xg24-dev-kit?tab=overview)|
 
+
+|Description|Identifier|Documentation/Links|
+| --- | --- | --- |
+|SparkFun Qwiic Cable Kit|KIT-15081|[KIT-15081](https://www.sparkfun.com/products/15081)|
+|Silabs Click Shield|MIKROE-4464|[MIKROE-44641](https://www.mikroe.com/silabs-click-shield)|
+
+
 ### Third Party Hardware
 
 The hardware drivers and some of the virtual applications require third party hardware. These third party hardware boards can be purchased from the following suppliers. 
@@ -73,6 +80,11 @@ All Qwiic/STEMMA QT cables have the following color scheme and arrangement:
 - Red = 3.3V
 - Blue = SDA
 - Yellow = SCL
+
+
+This is the most frequently used [cables](https://www.sparkfun.com/products/15081) for Sparkfun Qwiic and Adafruit STEMMA QT connections.
+
+![QwiicCableSet](doc/qwiic-cable-set.png)
 
 ### BGM220 Bluetooth Module Explorer Kit
 

@@ -5,7 +5,7 @@ The hardware drivers and application examples stored on [Github](https://github.
 ## Hardware Drivers
 Drivers for third-party devices such as sensors, displays, interfaces for variouse type of hardware.
 
-> Depricated repository, newly developed drivers for the application examples is stored in the Third Party Hardware Drivers GSDK Extension.
+> Deprecated repository, newly developed drivers for the application examples is stored in the Third Party Hardware Drivers GSDK Extension.
 
 [https://github.com/SiliconLabs/platform_hardware_drivers](https://github.com/SiliconLabs/platform_hardware_drivers)
 
