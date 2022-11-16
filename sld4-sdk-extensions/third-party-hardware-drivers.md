@@ -41,16 +41,16 @@ The following drivers implement the required peripheral driver interfaces for th
  - BMA400 - Accel 5 Click (Mikroe)
  - CAP1166 - Capacitive Touch 2 Click (Mikroe)
  - MAXM86161 - Heart Rate 2 Click (Mikroe)
- - Pocket Geiger Radiation - Type 5 (Sparkfun)
  - SHTC3 - Temp&Hum 9 Click (Mikroe)
+ - Type 5 - Pocket Geiger Radiation (Sparkfun)
+
+### **Services**
+ - GLIB - OLED Graphics Library
+ - Mikroe SDK Peripheral Drivers
+   - Digital I/O
+   - I2C
+   - PWM
+   - SPI
 
 ### **Wireless Connectivity**
  - ID-12LA - RFID Reader (Sparkfun) [I2C]
-
-### **Services**
-- GLIB OLED Graphics Library
-- MikroSDK Peripheral Drivers
-  - I2C
-  - PWM
-  - SPI
-  - ADC
