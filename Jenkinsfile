@@ -55,7 +55,7 @@ pipeline {
             }
             steps {
                script {
-                  dsc.pushScratch('qa')
+                  dsc.pushScratch('production')
                }
             }
         }
