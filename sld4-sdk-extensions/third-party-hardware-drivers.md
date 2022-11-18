@@ -32,21 +32,23 @@ The following drivers implement the required peripheral driver interfaces for th
 
 ### **Display & LED**
  - SSD1306 - Micro OLED Breakout (Sparkfun) [I2C]
- - SSD1306 - OLEDW Click (Mikroe) [SPI]
+ - SSD1306 - OLED W Click (Mikroe) [SPI]
+
+### **Human Machine Interface**
+ - CAP1166 - Capacitive Touch 2 Click (Mikroe)
 
 ### **Motor Control**
  - LB11685AV - Brushless 16 Click (Mikroe)
 
 ### **Sensors**
  - BMA400 - Accel 5 Click (Mikroe)
- - CAP1166 - Capacitive Touch 2 Click (Mikroe)
  - MAXM86161 - Heart Rate 2 Click (Mikroe)
  - SHTC3 - Temp&Hum 9 Click (Mikroe)
  - Type 5 - Pocket Geiger Radiation (Sparkfun)
 
 ### **Services**
  - GLIB - OLED Graphics Library
- - Mikroe SDK Peripheral Drivers
+ - mikroSDK 2.0 SDK - Peripheral Drivers
    - Digital I/O
    - I2C
    - PWM
