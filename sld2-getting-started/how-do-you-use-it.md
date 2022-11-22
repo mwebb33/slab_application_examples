@@ -62,11 +62,11 @@ You can follow this step-by-step guide to install and use the extension or watch
 
   ![Preferences](doc/studio/sdke/preferences.png)
 
-* **STEP 3** Go Simplicity Studio/SKDs, select an installed GSDK (version >=4.1.1), click on **Add Extension**
+* **STEP 3** Go Simplicity Studio/SDKs, select an installed GSDK (version >=4.1.1), click on **Add Extension**
 
   ![AddSDKExtension](doc/studio/sdke/sdks.png)
 
-* **STEP 4** Select the SDK Extension's location, click on **Ok**
+* **STEP 4** Select the SDK Extension's location, click on **OK**
 
   The SDK Extension will be detected in the repository folder.
 
@@ -109,7 +109,7 @@ Launcher creates a new project based on the selected template, this project cont
   ![SoftwareComponents](doc/studio/sdke/sw-components.png)
 
 
-* **STEP 2** Select a driver from the list by clicking on it, click on the **Install**
+* **STEP 3** Select a driver from the list by clicking on it, click on the **Install**
 
   ![SoftwareComponentsInstall](doc/studio/sdke/sw-components-installed.png)
 
