@@ -8,14 +8,14 @@ Third Party Hardware Drivers is a GSDK Extension to provide support for third pa
 - **Accelerate Design Phase**
   - Quick and easy integration of 1,100+ devices, manufactured by different board providers
   - 10x faster, than developing individual HW drivers from scratch
-- **Customer Self-Serve support**
+- **Customer Self-Serve Support**
   - Easy to start, fast to learn, time-saving
   - Based on 3rd party boards, diverse Applications can be created
 
 
 ![ThirdPartyHwDrvExt](doc/layers.png)
 
-This extension consumes the [MikroSDK Click Plugin](https://github.com/MikroElektronika/mikrosdk_click_v2) for the [MikroSDK](https://github.com/MikroElektronika/mikrosdk_v2) developed by [Mikroe](https://www.mikroe.com/).
+This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElektronika/mikrosdk_click_v2) for the [mikroSDK](https://github.com/MikroElektronika/mikrosdk_v2) developed by [Mikroe](https://www.mikroe.com/).
 
 
 **See the [instructions](/application-examples/<docspace-docleaf-version>/ae-getting-started/how-do-you-use-it#adding-sdk-extensions-for-hardware-drivers) of the Section Getting Started for more information.**
@@ -24,15 +24,15 @@ This extension consumes the [MikroSDK Click Plugin](https://github.com/MikroElek
 
 The following drivers are tested and integrated into the extension. 
 
-Besides the integrated drivers, it is possible to add additional drivers from the [MikroSDK Click Plugin Repository](https://github.com/MikroElektronika/mikrosdk_click_v2) by using the [Services] -> MikroSDK Peripheral Drivers software components. 
+Besides the integrated drivers, it is possible to add additional drivers from the [mikroSDK Click Plugin Repository](https://github.com/MikroElektronika/mikrosdk_click_v2) by using the [Services] -> mikroSDK 2.0 SDK - Peripheral Drivers software components. 
 The following drivers implement the required peripheral driver interfaces for the MikroSDK Click plugin.
 
 ### **Audio & Voice**
  - CMT_8540S_SMT - Buzz 2 Click (Mikroe)
 
 ### **Display & LED**
- - SSD1306 - Micro OLED Breakout (Sparkfun) [I2C]
- - SSD1306 - OLED W Click (Mikroe) [SPI]
+ - SSD1306 - Micro OLED Breakout (Sparkfun) - I2C
+ - SSD1306 - OLED W Click (Mikroe) - SPI
 
 ### **Human Machine Interface**
  - CAP1166 - Capacitive Touch 2 Click (Mikroe)
@@ -55,4 +55,4 @@ The following drivers implement the required peripheral driver interfaces for th
    - SPI
 
 ### **Wireless Connectivity**
- - ID-12LA - RFID Reader (Sparkfun) [I2C]
+ - ID-12LA - RFID Reader (Sparkfun) - I2C
