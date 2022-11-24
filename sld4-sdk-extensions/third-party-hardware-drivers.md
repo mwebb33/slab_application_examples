@@ -24,8 +24,9 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
 
 The following drivers are tested and integrated into the extension. 
 
-Besides the integrated drivers, it is possible to add additional drivers from the [mikroSDK Click Plugin Repository](https://github.com/MikroElektronika/mikrosdk_click_v2) by using the [Services] -> mikroSDK 2.0 SDK - Peripheral Drivers software components. 
-The following drivers implement the required peripheral driver interfaces for the MikroSDK Click plugin.
+Besides the integrated drivers, it is possible to add additional drivers from the [mikroSDK Click Plugin Repository](https://github.com/MikroElektronika/mikrosdk_click_v2) by using the [Services] -> mikroSDK 2.0 SDK - Peripheral Drivers software components.
+
+Software components in the mikroSDK 2.0 SDK - Peripheral Drivers are implement the required peripheral driver interfaces for the MikroSDK Click plugin.
 
 In general the software components are named in accordance with the following naming convention.
 
