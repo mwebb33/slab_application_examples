@@ -43,7 +43,7 @@ The selected Simplicity Studio project is imported into your workspace. You can 
 
 ## Adding SDK Extensions for Hardware Drivers
 
-You can find the Third Party Hardware Drivers GSDK Extension at Github, as a frist step you should clone the repository to your local computer. 
+You can find the Third Party Hardware Drivers GSDK Extension at Github, as a first step you should clone the repository to your local computer. 
 
 
 You can follow this step-by-step guide to install and use the extension or watch a guideline video showing the same steps.
