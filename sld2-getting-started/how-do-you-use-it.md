@@ -62,7 +62,7 @@ You can follow this step-by-step guide to install and use the extension or watch
 
   ![Preferences](doc/studio/sdke/preferences.png)
 
-* **STEP 3** Go Simplicity Studio/SDKs, select an installed GSDK (version >=4.1.1), click on **Add Extension**
+* **STEP 3** Go Simplicity Studio/SDKs, select an installed GSDK (version >=4.2.0), click on **Add Extension**
 
   ![AddSDKExtension](doc/studio/sdke/sdks.png)
 
@@ -105,6 +105,8 @@ Launcher creates a new project based on the selected template, this project cont
 * **STEP 1** Open a project configuration (The selected perspective should be "Simplicity IDE".).
 
 * **STEP 2** Select **SOFTWARE COMPONENTS** and search with "third" keyword in the Search keywords, component's name input
+
+  > Make sure that the components with **Evaluation** quality level are enabled in the Software Components view.
 
   ![SoftwareComponents](doc/studio/sdke/sw-components.png)
 
