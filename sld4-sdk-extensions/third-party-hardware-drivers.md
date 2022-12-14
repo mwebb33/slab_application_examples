@@ -67,10 +67,12 @@ Although, the drivers mainly developed and tested with the **<BOARD_NAME>** exte
 ### **Services**
  - GLIB - OLED Graphics Library
  - mikroSDK 2.0 SDK - Peripheral Drivers
+   - ADC
    - Digital I/O
    - I2C
    - PWM
    - SPI
+   - UART
 
 ### **Wireless Connectivity**
  - ID-12LA - RFID Reader (Sparkfun) - I2C
