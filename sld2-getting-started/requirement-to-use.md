@@ -6,7 +6,7 @@
 > The required development kit is defined for each application example. Information on the required development kit is described in the project's readme files in the repository of the example.
 
 
-**The most frequently used development, starter and explorer kits are listed in the table below.**
+**The most frequently used development, starter, and explorer kits are listed in the table below.**
 
 |Description|Identifier|Documentation/Links|
 | --- | --- | --- |
@@ -22,13 +22,13 @@
 |Silabs Click Shield|MIKROE-4464|[MIKROE-44641](https://www.mikroe.com/silabs-click-shield)|
 
 
-### Third Party Hardware
+### Third-Party Hardware
 
-The hardware drivers and some of the virtual applications require third party hardware. These third party hardware boards can be purchased from the following suppliers. 
+The hardware drivers and some of the virtual applications require third-party hardware. These third-party hardware boards can be purchased from the following suppliers.
 
-> The documentation of each hardware driver and application example describes the required type of third party board.
+> The documentation of each hardware driver and application example describes the required type of third-party board.
 
-**The most frequently used third party suppliers**
+**The most frequently used third-party suppliers**
 
 
 |Supplier|Link|
@@ -41,7 +41,7 @@ The hardware drivers and some of the virtual applications require third party ha
 ## Software
 
 ### Development Environment
-Simplicity Studio is the core development environment designed to support the Silicon Labs IoT portfolio of system-on-chips (SoCs) and modules. It provides access to target device-specific web and SDK resources; software and hardware configuration tools; an integrated development environment (IDE) featuring industry-standard code editors, compilers and debuggers; and advanced, value-add tools for network analysis and code-correlated energy profiling.
+Simplicity Studio is the core development environment designed to support the Silicon Labs IoT portfolio of system-on-chips (SoCs) and modules. It provides access to target device-specific web and SDK resources; software and hardware configuration tools; an integrated development environment (IDE) featuring industry-standard code editors, compilers and debuggers, and advanced, value-add tools for network analysis and code-correlated energy profiling.
 
 ![SS](doc/ss.png)
 
@@ -60,18 +60,18 @@ The required GSDK version is described in the readme files for each project.
 
 ## Setup
 
-Silabs development kits can be connected to any third party shield via simple wiring, however most of the boards are supporting quick and easy connectivity via Qwiic and mikroBUS connectors.
+Silabs development kits can be connected to any third-party shield via simple wiring, however, most of the boards support quick and easy connectivity via Qwiic and mikroBUS connectors.
 
 ### Mikroe Click Boards
 
-MikroElektronika Click boards can be connected to host controllers via the [mikroBUS](https://download.mikroe.com/documents/standards/mikrobus/mikrobus-standard-specification-v200.pdf) connectors, see the pinout specification below.
+MikroElektronika Click boards can be connected to host controllers via the [mikroBUS](https://download.mikroe.com/documents/standards/mikrobus/mikrobus-standard-specification-v200.pdf) connectors; see the pinout specification below.
 
 [![mikroBUS](doc/mikroe-microbus.png)](https://download.mikroe.com/documents/standards/mikrobus/mikrobus-standard-specification-v200.pdf)
 
 
 ### Sparkfun [Qwiic]() or Adafruit [STEMMA QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt) Boards
 
-The sparkfun Qwiic and Adafruit STEMMA QT capable boards using the same 4 pins - JST SH 1.0mm pitch connectors to provide quick and easy I2C connectivity between development kits and third party boards.
+The sparkfun Qwiic and Adafruit STEMMA QT capable boards use the same 4 pins - JST SH 1.0mm pitch connectors to provide quick and easy I2C connectivity between development kits and third-party boards.
 
 ![QwiicCableConnector](doc/qwiic-cable-connector.png)
 
@@ -82,7 +82,7 @@ All Qwiic/STEMMA QT cables have the following color scheme and arrangement:
 - Yellow = SCL
 
 
-This is the most frequently used [cables](https://www.sparkfun.com/products/15081) for Sparkfun Qwiic and Adafruit STEMMA QT connections.
+These are the most frequently used [cables](https://www.sparkfun.com/products/15081) for Sparkfun Qwiic and Adafruit STEMMA QT connections.
 
 ![QwiicCableSet](doc/qwiic-cable-set.png)
 

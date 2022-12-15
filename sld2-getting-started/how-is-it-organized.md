@@ -1,21 +1,21 @@
 # Repositories
 
-The hardware drivers and application examples stored on [Github](https://github.com/SiliconLabs), in public Git repositories.
+The hardware drivers and application examples are stored on [Github](https://github.com/SiliconLabs) in public Git repositories.
 
 ## Hardware Drivers
-Drivers for third-party devices such as sensors, displays, interfaces for variouse type of hardware.
+These are drivers for third-party devices such as sensors, displays, and interfaces for various types of hardware.
 
-> Deprecated repository, newly developed drivers for the application examples is stored in the Third Party Hardware Drivers GSDK Extension.
+> Deprecated repository, the newly developed drivers for the application examples are stored in the Third-Party Hardware Drivers GSDK Extension.
 
 [https://github.com/SiliconLabs/platform_hardware_drivers](https://github.com/SiliconLabs/platform_hardware_drivers)
 
-## Third Party Hardware Drivers - GSDK Extension
-SDK Extension for Third Party hardware drivers for EFM32 and EFR32.
+## Third-Party Hardware Drivers - GSDK Extension
+SDK Extension for Third-Party hardware drivers for EFM32 and EFR32.
 
 [https://github.com/SiliconLabs/platform_hardware_drivers_sdk_extensions](https://github.com/SiliconLabs/platform_hardware_drivers_sdk_extensions)
 
 ## Wireless Applications by technology
-The Application Examples Program provides real-life application examples for most of the popular wireless technologies. The examples stored in separated repositories.
+The Application Examples Program provides real-life application examples for most of the popular wireless technologies. These examples are stored in separate repositories.
 
 [https://github.com/SiliconLabs/application_examples](https://github.com/SiliconLabs/application_examples)
 

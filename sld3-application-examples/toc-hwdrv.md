@@ -1,5 +1,5 @@
 # Table of Contents by Hardware Driver Class #
-Hardware drivers are provided for popular 3rd party expansion boards such as:
+Hardware drivers are provided for popular third-party expansion boards such as:
 1. [SparkFun QWIIC](https://www.sparkfun.com/qwiic)
 2. [MikroE Click](https://www.mikroe.com/click)
 3. [Adafruit](https://www.adafruit.com/)

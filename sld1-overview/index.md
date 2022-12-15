@@ -1,24 +1,24 @@
 # Overview
-**Application Examples Program (AEP)** is an umbrella term that includes the different promotion and enablement HW drivers, virtual applications or reference designs.
+The **Application Examples Program (AEP)** is an umbrella term that includes the different promotion and enablement HW drivers, virtual applications, or reference designs.
 
 
 [![GithubLogo](doc/github-logo.png)](https://github.com/SiliconLabs/application_examples)
 
-The application examples are hosted at Github [here](https://github.com/SiliconLabs/application_examples).
+The application examples are hosted on Github [here](https://github.com/SiliconLabs/application_examples).
 
-Strong emphases is put on a building block concept, where these can be combined and people can experiment even more complex applications reusing these sample codes. The aim is to extend the operation to 3rd party HW platforms / ecosystems as well, not just supporting our development kits.
+Strong emphasis is put on a building block concept, where these can be combined and people can experiment with even more complex applications by reusing these sample codes. The aim is to extend the operation to 3rd party HW platforms/ecosystems as well, not just supporting our development kits.
 
 
 
 ![AEP](doc/aep-layers.png)
 
-**As the go-to provider for IoT solutions, we provide developers at all levels with an easy to use, accessible application examples they can use to speed their developments and get to market faster.**
+**As the go-to provider for IoT solutions, we provide developers at all levels with easy-to-use, accessible application examples they can use to speed up their developments and get to market faster.**
 
 ## Simple Sample Code
 
-Simple sample code is the most basic product from the AEP program portfolio . Those mainly intend to demonstrate peripherals and low level platform components (NVM3, crypto, BL).
+Simple sample code is the most basic product from the AEP program portfolio. Those mainly intend to demonstrate peripherals and low-level platform components (NVM3, crypto, BL).
 
-The goal is provide a comprehensive set of examples demonstrating their features from different angles for different purposes.
+The goal is to provide a comprehensive set of examples demonstrating their features from different angles for different purposes.
 
 ## Hardware Driver
 
@@ -30,11 +30,11 @@ Those mainly intend to provide basic building blocks for application development
 
 ## Virtual Application
 
-Virtual application is a higher abstraction layer, it intends to promote the capabilities of hardware drivers integrated into a wireless stack like BLE.
+Virtual application is a higher abstraction layer, and it intends to promote the capabilities of hardware drivers integrated into a wireless stack like BLE.
 
-Virtual applications are either wireless stack applications or mostly wireless stack applications using simple sample codes and hardware drivers to promote the platform and the AEP component features. Those applications form ready to build like Simplicity Studio projects.
+Virtual applications are either wireless or mostly wireless stack applications using simple sample codes and hardware drivers to promote the platform and the AEP component features. Those applications form ready-to-build projects like Simplicity Studio projects.
 
-Complex virtual applications typically provide solutions for popular IoT products, like smart door lock, speech controlling and so on.
+Complex virtual applications typically provide solutions for popular IoT products, like smart door lock, speech controlling, and so on.
 
 
 ![AEP](doc/virtual-app.png)
@@ -44,9 +44,9 @@ Complex virtual applications typically provide solutions for popular IoT product
 
 ### Overview
 
-This project aims to implement a simple Bluetooth-Ethernet Thin Gateway, the sensor measures and collects data from the device's environment and the gateway request the results via BLE.
+This project aims to implement a simple Bluetooth-Ethernet Thin Gateway, wherein the sensor measures and collects data from the device's environment, and the gateway request the results via BLE.
 
-When the device in connected to a sensor peripheral the gateway reads the BLE characteristics to retrieve the measured temperature and humidity. The measurements results are uploaded to dweet.io via the Ethernet Click board.
+When the device is connected to a sensor peripheral, the gateway reads the BLE characteristics to retrieve the measured temperature and humidity. The measurement results are uploaded to dweet.io via the Ethernet Click board.
 
 ![AEP](doc/example/overview-eth-ble-gateway.png)
 
@@ -58,10 +58,10 @@ The ETH WIZ Click can be plugged into the BGM220 Bluetooth Module Explorer Kit v
 
 ### Cloud Service
 
-The temperature and humidity values measured by the Thunderboard Sense 2 development kit. Values are trasmitted via BLE from the data sender device to the data collector environment. 
+The Thunderboard Sense 2 development kit measure the temperature and humidity values. These values are transmitted via BLE from the data sender device to the data collector environment.
 
-The measured environment data are transferred to the cloud service via Ethernet connection.
+The measured environment data are transferred to the cloud service via an Ethernet connection.
 
-The trasmitted values can be visualised on the graphical interface of the cloud service.
+The transmitted values can be visualized on the graphical interface of the cloud service.
 
 ![AEP](doc/example/dweet.png)
