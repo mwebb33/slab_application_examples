@@ -12,7 +12,7 @@ These are drivers for third-party devices such as sensors, displays, and interfa
 ## Third-Party Hardware Drivers - GSDK Extension
 SDK Extension for Third-Party hardware drivers for EFM32 and EFR32.
 
-[https://github.com/SiliconLabs/platform_hardware_drivers_sdk_extensions](https://github.com/SiliconLabs/platform_hardware_drivers_sdk_extensions)
+[https://github.com/SiliconLabs/third_party_hw_drivers_extension](https://github.com/SiliconLabs/third_party_hw_drivers_extension)
 
 ## Wireless Applications by technology
 The Application Examples Program provides real-life application examples for most of the popular wireless technologies. These examples are stored in separate repositories.

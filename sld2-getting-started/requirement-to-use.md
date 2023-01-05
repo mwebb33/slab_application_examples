@@ -56,7 +56,7 @@ The required GSDK version is described in the readme files for each project.
  > In general, GSDK **v4.x.x** version or higher is required to compile and run the examples.
 
  Some of the examples require 
- [Third Party Hardware Driver GSDK Extension](https://github.com/SiliconLabs/platform_hardware_drivers_sdk_extensions).
+ [Third Party Hardware Driver GSDK Extension](https://github.com/SiliconLabs/third_party_hw_drivers_extension).
 
 ## Setup
 
