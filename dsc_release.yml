@@ -1,0 +1,10 @@
+# Release
+
+releaseTicket: '6d88e0c1-0e50-4b94-b4c4-5ed74ec16f1b'
+docSpaceConfigs:
+  - _docspace-application-examples.yml
+docLeafConfigs:
+  - sld1-overview/_doc-leaf-sld1-application-examples-overview.yml
+  - sld2-getting-started/_doc-leaf-sld2-application-examples-getting-started.yml
+  - sld3-application-examples/_doc-leaf-sld3-application-examples-application-examples.yml
+  - sld4-sdk-extensions/_doc-leaf-sld4-application-examples-sdk-extensions.yml
