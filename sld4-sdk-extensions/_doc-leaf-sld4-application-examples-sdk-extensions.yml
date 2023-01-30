@@ -1,0 +1,134 @@
+# Specifies this DocObject type defined in this file. This is a constant value.
+#
+# type: string
+# required: true
+#
+objectType: docLeaf
+
+# A permanent, globally-unique identifier for this DocLeaf.
+# It should be human readable, as it will appear in customer-facing URLs and
+# other internal tools. Once assigned, this id can not be changed. Best practice
+# for this id is to use the title of the document. The id must be a string in
+# kebab-case and may only use characters [a-z][0-9] and `-` (hyphen).
+#
+# type: string
+# required: true
+#
+id: ae-sdk-extensions
+
+# Controls access to this DocLeaf. If 'prerelease', access will be limited
+# to properly authenticated users.
+#
+# TODO: What other info do we need to capture here to properly grant access,
+#       e.g. specific users, groups, etc?
+#
+# type: public
+# default: 'public'
+# required: false
+#
+access: public
+
+# The lifecycle status of this DocLeaf. If 'deprecated', the content will be removed from
+# search indexes and a notice will be displayed on the document.
+#
+# type: active | deprecated | archived
+# default: 'active'
+# required: false
+#
+status: active
+
+# Defines the current version identifier for this DocLeaf. All published
+# Versions of a DocLeaf will be available, simultaneously, on docs.silabs.com.
+# This version string will appear in public-facing URLs. This value should only
+# be changed when you need to retain the previous version in a the history.
+#
+# Updates can be made to existing DocLeaf Versions by deploying new content with
+# the same `id` and `version` values through the standard tooling and release
+# process. Internally, SUDS will record git commit information and assign a
+# date-based id to track these updates.
+#
+# We recomend the use of Semantic Versioning or a similar <MAJOR>.<MINOR>.<PATCH>
+# scheme, but any monotonically increasing string will suffice.
+#
+# type: string
+# required: true
+#
+version: "1.0.0"
+
+# A set of DocAuthors for this DocLeaf, stored as <short_account_name>@silabs.com.
+#
+# type: List<string>
+# required: true
+#
+authors:
+    - daniel.nemeth@silabs.com
+
+# Specifies the type of source DocContent.
+#
+# type: markdown | doxygen
+# required: true
+#
+contentType: markdown
+
+# The title of this DocLeaf. Will appear publicly in places like web browser tabs
+# and menu headings. This title will be the L0 menu item for this DocLeaf.
+#
+# type: string
+# required: true
+#
+title: "SDK Extensions"
+
+# The description of this DocLeaf. Will exist as metadata, but appear publicly
+# in places like Simplicity Studio or silabs.com.
+#
+# type: string
+# required: false
+#
+description: "Contents of AEP by category"
+
+# Path to a folder containing the source content, relative to the location of this
+# config file.
+#
+# type: string
+# default: `./`
+# required: false
+#
+sourceDir: ./
+
+# The file containing the "entry point" to this DocLeaf. Users coming to this
+# DocLeaf from a DocSpace or other external links will land on this page first.
+# Path will be resolved relative to `source.dir`. For compact single documents,
+# this file may serve as the entire document. For more complex documents,
+# additional content can be provided through the `menu` (see below). This
+# document will be accessible via the `title` as an L0 menu item.
+#
+# type: string
+# default: 'index.md'
+# required: false
+#
+root: ./index.md
+
+# The Menu for navigating a DocLeaf's content. This DocLeafMenu can only reference
+# content contained by the DocLeaf itself. No external content can appear here.
+# The DocLeaf `title` and `root` will be rendered as an "L0" item above this menu.
+# When designing your Menu, keep in mind that it will be re-used in larger DocSpaces.
+#
+# type: DocLeafMenu
+# required: false
+#
+
+docSpaceParent: ../_docspace-application-examples.yml
+
+
+menu:
+  # A set of links which appear as "L1" Menu Items. Each Items' key will be used
+  # as the title, and the value as the path to the source file. The path will
+  # be resolved relative to the DocLeaf's `source.dir`.
+  #
+  # Items are rendered in the order defined. 
+  #
+  # type: Map<string, string>
+  # required: false
+  #
+  items:
+    - Third Party Hardware Drivers: ./third-party-hardware-drivers.md
