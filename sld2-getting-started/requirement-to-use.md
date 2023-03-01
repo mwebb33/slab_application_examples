@@ -13,7 +13,8 @@
 |EFR32xG22 Wireless Gecko Starter Kit|SLWSTK6021A|[SLWSTK6021A](https://www.silabs.com/development-tools/wireless/efr32xg22-wireless-starter-kit?tab=overview)|
 |BGM220 Bluetooth Module Explorer Kit|BGM220-EK4314A|[BGM220-EK4314A](https://www.silabs.com/development-tools/wireless/bluetooth/bgm220-explorer-kit?tab=overview)|
 |Thunderboard Sense 2|SLTB004A|[SLTB004A](https://www.silabs.com/development-tools/thunderboard/thunderboard-sense-two-kit?tab=overview)|
-|EFR32xG24 Dev Kit|SLWSTK6021A|[xG24-DK2601B](hhttps://www.silabs.com/development-tools/wireless/efr32xg24-dev-kit?tab=overview)|
+|EFR32xG24 Dev Kit|xG24-DK2601B|[xG24-DK2601B](https://www.silabs.com/development-tools/wireless/efr32xg24-dev-kit?tab=overview)|
+|EFR32xG24 Explorer Kit|xG24-EK2703A|[xG24-EK2703A](https://www.silabs.com/development-tools/wireless/efr32xg24-explorer-kit?tab=overview)|
 
 
 |Description|Identifier|Documentation/Links|
@@ -86,7 +87,7 @@ These are the most frequently used [cables](https://www.sparkfun.com/products/15
 
 ![QwiicCableSet](doc/qwiic-cable-set.png)
 
-### BGM220 Bluetooth Module Explorer Kit
+### BGM220 Bluetooth Module Explorer Kit / EFR32xG24 Explorer Kit
 
 ![BGM220PmikroBUS](doc/bgm220p-connectors.png)
 
@@ -95,7 +96,7 @@ The kit features support for hardware add-on boards via a mikroBus socket and a 
 ![MikroeSilabsClickShield](doc/bgm220p-connection.png)
 
 
-### EFR32xG22 Wireless Gecko Starter Kit/ Thunderboard Sense 2 / EFR32xG24 Dev Kit
+### EFR32xG22 Wireless Gecko Starter Kit / Thunderboard Sense 2 / EFR32xG24 Dev Kit
 
 Mikroe provides a [Silabs Click Shield](https://www.mikroe.com/silabs-click-shield) for easily connecting Silabs development kits from the Thunderboard family or any other Silabs wireless or MCU starter kit through the expansion header (EXP) to the Mikroe Click boards.
 
