@@ -8,6 +8,6 @@ title: "Application Examples"
 menu:
   items:
     - docleaf://ae-overview/1.0.0
-    - docleaf://ae-getting-started/1.0.0
+    - docleaf://ae-getting-started/1.0.1
     - docleaf://ae-application-examples/1.0.0
-    - docleaf://ae-sdk-extensions/1.0.0
+    - docleaf://ae-sdk-extensions/1.0.1

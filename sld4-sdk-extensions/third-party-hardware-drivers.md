@@ -185,7 +185,7 @@ Download the driver source files from the [mikroSDK 2.0 Click library](https://g
 
 * **STEP 2** Create a custom init function for the driver and add the required driver and driver config instances to the project.
 
-```
+``` c
 #include "app_log.h"
 #include "sl_status.h"
 #include "sl_i2cspm_instances.h"
@@ -218,7 +218,7 @@ sl_status_t mikroe_custom_shtc3_init(sl_i2cspm_t *i2cspm_instance)
 
 The mikroSDK driver provides the temphum9_t and temphum9_cfg_t types to configure the driver.
 
-```
+``` c
 typedef struct
 {
     // Modules 
@@ -254,7 +254,7 @@ typedef struct
 
 **Initialization**
 
-```
+``` c
 void app_init(void)
 {
 
@@ -271,7 +271,7 @@ void app_init(void)
 
 **Reading and printing the measured values**
 
-```
+``` c
 void measure_periodic(sl_sleeptimer_timer_handle_t *handle, void *data)
 {
   (void) handle;
@@ -287,7 +287,7 @@ void measure_periodic(sl_sleeptimer_timer_handle_t *handle, void *data)
 
 **The whole example app.c**
 
-```
+``` c
 #include "app_log.h"
 #include "sl_status.h"
 #include "sl_i2cspm_instances.h"
