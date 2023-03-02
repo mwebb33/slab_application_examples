@@ -100,9 +100,9 @@ Although, the drivers were mainly developed and tested with the **<BOARD_NAME>**
 
 ## Integrate new mikroSDK 2.0 Click drivers 
 
-The Third-Party Hardware Drivers extension provides one-click solution for tested hardware drivers allowing you to integrate 25 sensors into your project with ease.
+The Third-Party Hardware Drivers extension provides one-click solution for tested hardware drivers allowing you to integrate 25+ hardware drivers into your project with ease.
 
-Besides the tested hardware drivers, the extension provides a peripheral driver wrapper to connect easily the mikroSDK 2.0 Click drivers with Silabs GSDK.
+Besides the tested hardware drivers, the extension provides a peripheral driver wrapper to connect easily the mikroSDK 2.0 Click drivers with Silicon Labs GSDK.
 
 If you're not afraid to do some extra development, thanks to the developed wrapper, over 1,100+ hardware drivers can be added to your project from the mikroSDK 2.0 Click library. This will accelerate the design phase and provide you with a greater level of customer self-serve support.
 
@@ -246,7 +246,7 @@ typedef struct
 } temphum9_cfg_t;
 ```
 
-**Silicon Labs wrapper provides the high level configuration for the I2CSPM instance, therefore it is not required to confgure the speed, pin, or any other parameters except the i2c parameter in the temphum9_t type.**
+**Silicon Labs wrapper provides the high level configuration for the I2CSPM instance, therefore it is not required to configure the speed, pin, or any other parameters except the i2c parameter in the temphum9_t type.**
 
 **Only the i2c.handle pointer should be configured to point to the configured I2CSPM instance.**
 
