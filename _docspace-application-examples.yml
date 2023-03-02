@@ -1,6 +1,6 @@
 objectType: docSpace
 id: application-examples
-version: "1.0.0"
+version: "1.0.1"
 curators:
     - barna.czukor@silabs.com
     - thanh.ngo@silabs.com
