@@ -54,7 +54,7 @@ status: active
 # type: string
 # required: true
 #
-version: "1.0.0"
+version: "1.0.1"
 
 # A set of DocAuthors for this DocLeaf, stored as <short_account_name>@silabs.com.
 #
