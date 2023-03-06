@@ -121,7 +121,7 @@ Supported peripherals so far
 **Create a new project**
 
 * **STEP 1** Open the **Simplicity Studio**
-* **STEP 2** Add the **Third-Party Hardware Drivers extension**, see details [here]([instructions](/application-examples/<docspace-docleaf-version>/ae-getting-started/how-do-you-use-it#adding-sdk-extensions-for-hardware-drivers)).
+* **STEP 2** Add the **Third-Party Hardware Drivers extension**, see details [here](/application-examples/<docspace-docleaf-version>/ae-getting-started/how-do-you-use-it#adding-sdk-extensions-for-hardware-drivers).
 * **STEP 3** Connect your board to the PC via a USB cable
 * **STEP 4** Open the **Launcher** perspective in Simplicity Studio, select the target board
 * **STEP 5** Select the **EXAMPLE PROJECTS & DEMOS** tab in the launcher view

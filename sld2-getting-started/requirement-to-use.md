@@ -15,6 +15,7 @@
 |Thunderboard Sense 2|SLTB004A|[SLTB004A](https://www.silabs.com/development-tools/thunderboard/thunderboard-sense-two-kit?tab=overview)|
 |EFR32xG24 Dev Kit|xG24-DK2601B|[xG24-DK2601B](https://www.silabs.com/development-tools/wireless/efr32xg24-dev-kit?tab=overview)|
 |EFR32xG24 Explorer Kit|xG24-EK2703A|[xG24-EK2703A](https://www.silabs.com/development-tools/wireless/efr32xg24-explorer-kit?tab=overview)|
+|SparkFun Thing Plus Matter - MGM240P|DEV-20270 (BRD2704A)|[DEV-20270](https://www.sparkfun.com/products/20270)|
 
 
 |Description|Identifier|Documentation/Links|
@@ -107,3 +108,13 @@ Sparkfun Qwiic/Adafruit STEMMA QT boards also can be connected to these developm
 Mikroe Click Temperature sensor board connected to a Thunderboard Sense 2 via a Silabs Click shield. 
 
 ![MikroeSilabsClickShield](doc/mikroe-click-shield.png)
+
+### SparkFun Thing Plus Matter - MGM240P
+
+[SparkFun Thing Plus Matter - MGM240P](https://www.sparkfun.com/products/20270) is a development board from the Sparkfun Thing Plus development board family. 
+
+This board integrated tge MGM240P module. The MGM240P wireless module from Silicon Labs® provides secure connectivity for both 802.15.4 with Mesh communication (Thread) and Bluetooth® Low Energy 5.3 protocols. The module comes ready for integration into Silicon Labs' Matter IoT protocol for home automation. SparkFun's Thing Plus development boards are Feather-compatible and include a Qwiic connector for easy integration into our Qwiic Connect System for solderless I2C circuits.
+
+External boards can be easily connected via the onboard Qwiic connector.
+
+![Spakfun-ThingPlus](doc/sparkfun-thingplus-mgm240p.png)
