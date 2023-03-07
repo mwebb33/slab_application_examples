@@ -121,7 +121,7 @@ In general, drivers in the mikroSDK 2.0 Click library provide interfaces to init
 * **<driver_name>_init** function
 
 ### Configuration
-Configuration interfaces are intended to configure the peripheral related configuration parameteres, such as pin assignements and the speed, and address values for the communication interface.
+Configuration interfaces are intended to configure the peripheral-related configuration parameters, such as pin assignments and the speed, and address values for the communication interface.
 
 Required configuration parameters are defined in the configuration structure of the drivers. (***<driver_name>_cfg_t** structure)
 
@@ -132,9 +132,9 @@ In general, you should invoke the <driver_name>_cfg_setup function and there is 
 ### Initialization
 Interfaces to initialize the drivers require a click context object and a click driver configuration object to perform the correct initialization of the driver.
 
-Click context objects are typically contains an interface for the peripheral driver.
+Click context objects typically contains an interface for the peripheral driver.
 
-The peripheral interface objects are providing a handler for the peripheral driver and variables to store the device specific parameters, such as the address of the device for I2C interfaced hardware.
+The peripheral interface objects provide a handler for the platform-dependent peripheral driver and also provide variables to store the device-specific parameters, such as the address of the device for I2C interfaced hardware.
 
 **This handler must be configured before calling the <driver_name>_init function.**
 
@@ -151,7 +151,7 @@ You can find examples in the table below.
 |SPI|W5500|[ETH WIZ Click](https://www.mikroe.com/eth-wiz-click)|[Link](https://github.com/SiliconLabs/third_party_hw_drivers_extension/tree/master/driver/public/mikroe/eth_wiz_w5500)|
 |UART|EM3080W|[Barcode 2 Click](https://www.mikroe.com/barcode-2-click)|[Link](https://github.com/SiliconLabs/third_party_hw_drivers_extension/tree/master/driver/public/mikroe/barcode2_em3080w)|
 
-In the following section you can find detailed guideline to integrate a driver from the mikroSDK 2.0 Click library using the I2C interface.
+In the following section, you can find a detailed guideline to integrate a driver from the mikroSDK 2.0 Click library using the I2C interface.
 
 ### Example - Integrate the SHTC3 Temperature and Humidity sensor driver
 
