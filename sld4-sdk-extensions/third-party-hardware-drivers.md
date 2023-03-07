@@ -116,6 +116,43 @@ Supported peripherals so far
    - SPI
    - UART
 
+In general, drivers in the mikroSDK 2.0 Click library provide interfaces to initialize and configure the drivers. 
+* **<driver_name>_cfg_setup** function
+* **<driver_name>_init** function
+
+### Configuration
+Configuration interfaces are intended to configure the peripheral related configuration parameteres, such as pin assignements and the speed, and address values for the communication interface.
+
+Required configuration parameters are defined in the configuration structure of the drivers. (***<driver_name>_cfg_t** structure)
+
+Pin configuration and other interface specific settings are provided by the GSDK via the component instances. 
+
+In general, you should invoke the <driver_name>_cfg_setup function and there is no need to configure the parameters available in the configuration structure.
+
+### Initialization
+Interfaces to initialize the drivers require a click context object and a click driver configuration object to perform the correct initialization of the driver.
+
+Click context objects are typically contains an interface for the peripheral driver.
+
+The peripheral interface objects are providing a handler for the peripheral driver and variables to store the device specific parameters, such as the address of the device for I2C interfaced hardware.
+
+**This handler must be configured before calling the <driver_name>_init function.**
+
+The approach and the steps to integrate drivers for devices using different interfaces are similar. 
+You can find examples in the table below.
+
+**Examples for integrate drivers using different interfaces**
+
+|Interface|Circuit|Click Board|Example|
+| --- | --- | --- | --- |
+|ADC|MQ-7|[CO Click](https://www.mikroe.com/co-click)|[Link](https://github.com/SiliconLabs/third_party_hw_drivers_extension/tree/master/driver/public/mikroe/co_mq7)|
+|I2C|SHTC3|[Temp-Hum 9 Click](https://www.mikroe.com/temphum-9-click)|[Link](https://github.com/SiliconLabs/third_party_hw_drivers_extension/tree/master/driver/public/mikroe/temphum9_shtc3)|
+|PWM|CMT-8540S-SMT|[Buzz 2 Click](https://www.mikroe.com/buzz-2-click)|[Link](https://github.com/SiliconLabs/third_party_hw_drivers_extension/tree/master/driver/public/mikroe/buzz2_cmt_8540s_smt)|
+|SPI|W5500|[ETH WIZ Click](https://www.mikroe.com/eth-wiz-click)|[Link](https://github.com/SiliconLabs/third_party_hw_drivers_extension/tree/master/driver/public/mikroe/eth_wiz_w5500)|
+|UART|EM3080W|[Barcode 2 Click](https://www.mikroe.com/barcode-2-click)|[Link](https://github.com/SiliconLabs/third_party_hw_drivers_extension/tree/master/driver/public/mikroe/barcode2_em3080w)|
+
+In the following section you can find detailed guideline to integrate a driver from the mikroSDK 2.0 Click library using the I2C interface.
+
 ### Example - Integrate the SHTC3 Temperature and Humidity sensor driver
 
 **Create a new project**
