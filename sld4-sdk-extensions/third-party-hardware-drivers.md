@@ -106,6 +106,7 @@ Besides the tested hardware drivers, the extension provides a peripheral driver 
 
 If you're not afraid to do some extra development, thanks to the developed wrapper, over 1,100+ hardware drivers can be added to your project from the mikroSDK 2.0 Click library. This will accelerate the design phase and provide you with a greater level of customer self-serve support.
 
+
 This chapter is aimed to guide you to integrate a hardware driver from the mikroSDK 2.0 Click library using the wrappers from the *mikroSDK 2.0 SDK - Peripheral Drivers* components.
 
 Supported peripherals so far
@@ -123,7 +124,7 @@ In general, drivers in the mikroSDK 2.0 Click library provide interfaces to init
 ### Configuration
 Configuration interfaces are intended to configure the peripheral-related configuration parameters, such as pin assignments and the speed, and address values for the communication interface.
 
-Required configuration parameters are defined in the configuration structure of the drivers. (***<driver_name>_cfg_t** structure)
+Required configuration parameters are defined in the configuration structure of the drivers. (**<driver_name>_cfg_t** structure)
 
 Pin configuration and other interface specific settings are provided by the GSDK via the component instances. 
 
@@ -153,7 +154,49 @@ You can find examples in the table below.
 
 In the following section, you can find a detailed guideline to integrate a driver from the mikroSDK 2.0 Click library using the I2C interface.
 
+
+### Basic integration steps
+
+* **STEP 0** Select and download a driver from the [mikroSDK 2.0 Click library](https://github.com/MikroElektronika/mikrosdk_click_v2).
+
+  **Make sure that the selected driver using a supported communication interface. See the supported interfaces above.** 
+
+* **STEP 1.1 - Optional** Add the Third-Party Hardware Drivers extension. See the instructions in detail [here](/application-examples/<docspace-docleaf-version>/ae-getting-started/how-do-you-use-it#adding-sdk-extensions-for-hardware-drivers).
+
+* **STEP 1.2 - Optional** Connect your board to the PC via a USB cable.
+
+* **STEP 1.3** Open the **Launcher** perspective in Simplicity Studio, and select the target board.
+
+* **STEP 2** Create a new empty project using an empty project template. (e.g.: **Empty C Project**) 
+* **STEP 3** Install the required mikroSDK 2.0 Peripheral Driver components from the Third-Party Hardware Drivers extension.
+
+  (e.g.: If the selected board using I2C to communicate with the host controller, then install the  [Third Party Hardware Drivers] -> [Services] -> [mikroSDK 2.0 SDK - Peripheral Drivers] -> I2C component.)
+
+* **STEP 4** Install additional components your project requires. (e.g.: Log, Assert, etc.)
+
+  Default I2CSPM instance is "mikroe", make sure that your I2CSPM instance is configured properly for the target board. 
+
+* **STEP 5** Copy and paste the new driver into the projects folder.
+* **STEP 6** Add the <driver_folder>/lib/include folder to the list of include directories in the project configuration.
+* **STEP 7** Exclude the <driver_folder>/example/ *.c files from the build.
+
+At this point the new project is ready to integrate the new driver. 
+
+* **STEP 8** Add objects for the click context and click configuration as global variables.
+* **STEP 8.1** Create a custom init function for your new driver.
+* **STEP 8.2** Set/configure the peripheral driver handler in the click context object. This handler should point to an existing peripheral instance.
+* **STEP 8.3** Invoke the <driver_name>_cfg_setup function from your custom init function.
+* **STEP 8.4** Invoke the <driver_name>_init function from your custom init function.
+* **STEP 9** Invoke your custom init function from app_init.
+* **STEP 10** Implement your application logic. (Integrate the driver APIs.)
+* **STEP 11** Build the project.
+* **STEP 12** Test the application on a target device.
+
 ### Example - Integrate the SHTC3 Temperature and Humidity sensor driver
+
+**Select and download a driver from the mikroSDK 2.0 Click Library**
+
+* **STEP 0** Select and download the temphum9 driver.
 
 **Create a new project**
 
