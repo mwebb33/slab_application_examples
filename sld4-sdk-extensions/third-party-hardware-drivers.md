@@ -22,30 +22,6 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
 
 ## Software Components
 
-The following drivers are tested and integrated into the extension. 
-
-Besides the integrated drivers, it is possible to add additional drivers from the [mikroSDK Click Plugin Repository](https://github.com/MikroElektronika/mikrosdk_click_v2) by using the [Services] -> mikroSDK 2.0 SDK - Peripheral Drivers software components.
-
-Software components in the mikroSDK 2.0 SDK - Peripheral Drivers are implemented as the required peripheral driver interfaces for the MikroSDK Click plugin.
-
-In general, the software components are named in accordance with the following naming convention.
-
-**<IC_NAME> - <BOARD_NAME> (<BOARD_VENDOR>) - \<INTERFACE>**
-
-Where,
-  - **IC_NAME** - The name of the integrated circuit on the external board. (e.g.,: SSD1306)
-  - **BOARD_NAME** - The name of the external board. (OLED W Click) 
-  - **BOARD_VENDOR** - External board vendor. (e.g.,: Mikroe, Sparkfun, Adafruit, etc.)
-  - **INTERFACE** - Optional parameter to indicate the communication interface in case the SDK extension implements multiple drivers for the same device with different interfaces. (e.g.,: SPI, I2C)
-
-Although, the drivers were mainly developed and tested with the **<BOARD_NAME>** external board, in most cases they should work with other boards using the same IC too.
-
- **Example**
-
- SSD1306 - Micro OLED Breakout (Sparkfun) - I2C driver was developed and tested with Sparkfun Micro OLED Breakout board; however, it can work (it may require changing the I2C address/display resolution in the configuration by the display board) with most of the OLED displays are available on the market controlled by the SSD1306 display controller.
-
-
-
 ### **Audio & Voice**
  - CMT_8540S_SMT - Buzz 2 Click (Mikroe)
 
@@ -104,6 +80,28 @@ Although, the drivers were mainly developed and tested with the **<BOARD_NAME>**
 
 ### **Wireless Connectivity**
  - ID-12LA - RFID Reader (Sparkfun) - I2C
+
+The above drivers are tested and integrated into the extension. 
+
+Besides the integrated drivers, it is possible to add additional drivers from the [mikroSDK Click Plugin Repository](https://github.com/MikroElektronika/mikrosdk_click_v2) by using the [Services] -> mikroSDK 2.0 SDK - Peripheral Drivers software components.
+
+Software components in the mikroSDK 2.0 SDK - Peripheral Drivers are implemented as the required peripheral driver interfaces for the MikroSDK Click plugin.
+
+In general, the software components are named in accordance with the following naming convention.
+
+**<IC_NAME> - <BOARD_NAME> (<BOARD_VENDOR>) - \<INTERFACE>**
+
+Where,
+  - **IC_NAME** - The name of the integrated circuit on the external board. (e.g.,: SSD1306)
+  - **BOARD_NAME** - The name of the external board. (OLED W Click) 
+  - **BOARD_VENDOR** - External board vendor. (e.g.,: Mikroe, Sparkfun, Adafruit, etc.)
+  - **INTERFACE** - Optional parameter to indicate the communication interface in case the SDK extension implements multiple drivers for the same device with different interfaces. (e.g.,: SPI, I2C)
+
+Although, the drivers were mainly developed and tested with the **<BOARD_NAME>** external board, in most cases they should work with other boards using the same IC too.
+
+ **Example**
+
+ SSD1306 - Micro OLED Breakout (Sparkfun) - I2C driver was developed and tested with Sparkfun Micro OLED Breakout board; however, it can work (it may require changing the I2C address/display resolution in the configuration by the display board) with most of the OLED displays are available on the market controlled by the SSD1306 display controller.
 
 ## Integrate new mikroSDK 2.0 Click drivers 
 
