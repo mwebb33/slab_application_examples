@@ -45,6 +45,7 @@ Although, the drivers were mainly developed and tested with the **<BOARD_NAME>**
  SSD1306 - Micro OLED Breakout (Sparkfun) - I2C driver was developed and tested with Sparkfun Micro OLED Breakout board; however, it can work (it may require changing the I2C address/display resolution in the configuration by the display board) with most of the OLED displays are available on the market controlled by the SSD1306 display controller.
 
 
+
 ### **Audio & Voice**
  - CMT_8540S_SMT - Buzz 2 Click (Mikroe)
 
@@ -54,6 +55,7 @@ Although, the drivers were mainly developed and tested with the **<BOARD_NAME>**
  - SSD1306 - OLED W Click (Mikroe) - SPI
 
 ### **Human Machine Interface**
+ - A-172-MRQ - Fingerprint 2 Click (Mikroe)
  - CAP1166 - Capacitive Touch 2 Click (Mikroe)
  - Qwiic Joystick (Sparkfun)
 
@@ -74,15 +76,21 @@ Although, the drivers were mainly developed and tested with the **<BOARD_NAME>**
  - AS7265x - Triad Spectroscopy Sensor (Sparkfun) - I2C
  - BMA400 - Accel 5 Click (Mikroe)
  - EM3080-W - Barcode 2 Click (Mikroe)
+ - MAX30101 & MAX32664  - Pulse Oximeter and Heart Rate Sensor (Sparkfun)
+ - MAX30101 - Heart Rate 4 Click (Mikroe)
  - MAXM86161 - Heart Rate 2 Click (Mikroe)
  - MLX90640 - IR Array Breakout (Sparkfun)
+ - MM5D91-00 - Radar Click (Mikroe)
  - MMA8452Q - Triple Axis Accelerometer Breakout (Sparkfun)
  - MQ7 - CO Click (Mikroe)
  - Qwiic Soil Moisture Sensor (Sparkfun) - I2C
+ - SGP40 - Air Quality Sensor (Sparkfun)
+ - SHT40 & SGP40 - Environment 2 Click (Mikroe)
  - SHTC3 - Temp&Hum 9 Click (Mikroe)
  - Type 5 - Pocket Geiger Radiation (Sparkfun)
  - VCNL4040 - Proximity Sensor (Sparkfun)
  - VL53L1X - Distance Sensor Breakout (Sparkfun)
+ - Water Detect Click (Mikroe)
 
 ### **Services**
  - GLIB - OLED Graphics Library
@@ -96,7 +104,6 @@ Although, the drivers were mainly developed and tested with the **<BOARD_NAME>**
 
 ### **Wireless Connectivity**
  - ID-12LA - RFID Reader (Sparkfun) - I2C
-
 
 ## Integrate new mikroSDK 2.0 Click drivers 
 
