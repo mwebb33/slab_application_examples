@@ -91,30 +91,30 @@ In general, the software components are named in accordance with the following n
 
 **<IC_NAME> - <BOARD_NAME> (<BOARD_VENDOR>) - \<INTERFACE>**
 
-Where,
+Which includes,
   - **IC_NAME** - The name of the integrated circuit on the external board. (e.g.,: SSD1306)
   - **BOARD_NAME** - The name of the external board. (OLED W Click) 
   - **BOARD_VENDOR** - External board vendor. (e.g.,: Mikroe, Sparkfun, Adafruit, etc.)
   - **INTERFACE** - Optional parameter to indicate the communication interface in case the SDK extension implements multiple drivers for the same device with different interfaces. (e.g.,: SPI, I2C)
 
-Although, the drivers were mainly developed and tested with the **<BOARD_NAME>** external board, in most cases they should work with other boards using the same IC too.
+Although, the drivers were mainly developed and tested with specific external boards, in most cases they should work with other boards using the same IC as well.
 
  **Example**
 
- SSD1306 - Micro OLED Breakout (Sparkfun) - I2C driver was developed and tested with Sparkfun Micro OLED Breakout board; however, it can work (it may require changing the I2C address/display resolution in the configuration by the display board) with most of the OLED displays are available on the market controlled by the SSD1306 display controller.
+ SSD1306 - Micro OLED Breakout (Sparkfun) - I2C driver was developed and tested with Sparkfun Micro OLED Breakout board. However, it may be compatible with most OLED displays available on the market, which are controlled by the SSD1306 display controller. To achieve compatibility, changes to the I2C address or display resolution in the configuration by the display board may be required. 
 
 ## Integrate new mikroSDK 2.0 Click drivers 
 
-The Third-Party Hardware Drivers extension provides one-click solution for tested hardware drivers allowing you to integrate 25+ hardware drivers into your project with ease.
+The Third-Party Hardware Drivers extension provides one-click solution for tested hardware drivers allowing you to integrate 30+ hardware drivers into your project with ease.
 
-Besides the tested hardware drivers, the extension provides a peripheral driver wrapper to connect easily the mikroSDK 2.0 Click drivers with Silicon Labs GSDK.
+In addition to the tested hardware drivers, the extension also provides a peripheral driver wrapper to connect easily the mikroSDK 2.0 Click drivers with Silicon Labs GSDK.
 
-If you're not afraid to do some extra development, thanks to the developed wrapper, over 1,100+ hardware drivers can be added to your project from the mikroSDK 2.0 Click library. This will accelerate the design phase and provide you with a greater level of customer self-serve support.
+If you are not afraid to do some extra development, thanks to the developed wrapper, over 1,100+ hardware drivers can be added to your project from the mikroSDK 2.0 Click library. This will accelerate the design phase and provide you with a greater level of customer self-serve support.
 
 
-This chapter is aimed to guide you to integrate a hardware driver from the mikroSDK 2.0 Click library using the wrappers from the *mikroSDK 2.0 SDK - Peripheral Drivers* components.
+This chapter is aimed to guide you in integrating a hardware driver from the mikroSDK 2.0 Click library using the wrappers from the *mikroSDK 2.0 SDK - Peripheral Drivers* components.
 
-Supported peripherals so far
+Currently, the following peripherals are supported:
    - ADC
    - Digital I/O
    - I2C
@@ -122,29 +122,29 @@ Supported peripherals so far
    - SPI
    - UART
 
-In general, drivers in the mikroSDK 2.0 Click library provide interfaces to initialize and configure the drivers. 
+In general, drivers in the mikroSDK 2.0 Click library provide interfaces for initializing and configuring the drivers. 
 * **<driver_name>_cfg_setup** function
 * **<driver_name>_init** function
 
 ### Configuration
-Configuration interfaces are intended to configure the peripheral-related configuration parameters, such as pin assignments and the speed, and address values for the communication interface.
+Configuration interfaces are used to configure the peripheral-related configuration parameters, such as pin assignments, speed, and address values for the communication interface.
 
-Required configuration parameters are defined in the configuration structure of the drivers. (**<driver_name>_cfg_t** structure)
+The required configuration parameters are defined in the configuration structure of the drivers. (**<driver_name>_cfg_t** structure)
 
 Pin configuration and other interface specific settings are provided by the GSDK via the component instances. 
 
 In general, you should invoke the <driver_name>_cfg_setup function and there is no need to configure the parameters available in the configuration structure.
 
 ### Initialization
-Interfaces to initialize the drivers require a click context object and a click driver configuration object to perform the correct initialization of the driver.
+Interfaces for initializing the drivers require a click context object and a click driver configuration object to perform the correct initialization of the driver.
 
-Click context objects typically contains an interface for the peripheral driver.
+Click context objects typically contain an interface for the peripheral driver.
 
 The peripheral interface objects provide a handler for the platform-dependent peripheral driver and also provide variables to store the device-specific parameters, such as the address of the device for I2C interfaced hardware.
 
 **This handler must be configured before calling the <driver_name>_init function.**
 
-The approach and the steps to integrate drivers for devices using different interfaces are similar. 
+The approach and steps to integrate drivers for devices using different interfaces are similar. 
 You can find examples in the table below.
 
 **Examples for integrate drivers using different interfaces**
@@ -157,7 +157,7 @@ You can find examples in the table below.
 |SPI|W5500|[ETH WIZ Click](https://www.mikroe.com/eth-wiz-click)|[Link](https://github.com/SiliconLabs/third_party_hw_drivers_extension/tree/master/driver/public/mikroe/eth_wiz_w5500)|
 |UART|EM3080W|[Barcode 2 Click](https://www.mikroe.com/barcode-2-click)|[Link](https://github.com/SiliconLabs/third_party_hw_drivers_extension/tree/master/driver/public/mikroe/barcode2_em3080w)|
 
-In the following section, you can find a detailed guideline to integrate a driver from the mikroSDK 2.0 Click library using the I2C interface.
+In the following section, you can find a detailed guideline for integrating a driver from the mikroSDK 2.0 Click library using the I2C interface.
 
 
 ### Basic integration steps
@@ -215,14 +215,14 @@ At this point the new project is ready to integrate the new driver.
 
 **Add required peripheral drivers from the TPHD extension**
 
-The SHTC3 Sensor has an I2C interface to communicate with the host microcontroller, you should check the required interface(s) needed by the external hardware you want to integrate the driver for. 
+The SHTC3 Sensor has an I2C interface to communicate with the host microcontroller. You should check the required interface(s) needed by the external hardware you want to integrate the driver for. 
 
 ![MikroE-SHTC3-pinout](doc/shtc3_pinout.png)
 
-* **STEP 1** Open the project configuration by double clicking on the *.slcp file in the folder of the project**
-* **STEP 2** Select the software components tab in the project configuration view
-* **STEP 3** Enable the extension and clear the quality filters
-* **STEP 4** Install the I2C wrapper from [Third Party Hardware Drivers] -> [Services] -> [mikroSDK 2.0 SDK - Peripheral Drivers] -> I2C
+* **STEP 1** Open the project configuration by double clicking on the *.slcp file in the project's folder.**
+* **STEP 2** Select the software components tab in the project configuration view.
+* **STEP 3** Enable the extension and clear the quality filters.
+* **STEP 4** Install the I2C wrapper from [Third Party Hardware Drivers] -> [Services] -> [mikroSDK 2.0 SDK - Peripheral Drivers] -> I2C.
 
 ![MikroE-SHTC3-i2c](doc/tphd_sw_mikrosdk_i2c.png)
 
@@ -230,7 +230,7 @@ The SHTC3 Sensor has an I2C interface to communicate with the host microcontroll
   * [Application] -> [Utility] -> Log
   * [Services] -> [Timers] -> Sleep Timer
 
-Default I2CSPM instance is "mikroe", make sure that your I2CSPM instance is configured properly for the target board. 
+The default I2CSPM instance is "mikroe". Make sure that your I2CSPM instance is configured properly for the target board. 
 
 See an example configuration for the EFR32xG24 Explorer Kit below.
 
@@ -440,7 +440,7 @@ void app_process_action(void)
 
 * **Build and flash the application**
 
- The driver and the demo application should operate properly if you connect the Temphum9 board to the explorer kit.
+If you connect the Temphum9 board to the Explorer Kit, the driver and the demo application should operate properly and you should be able to read the temperature and humidity measurements.
 
 **Output**
 
