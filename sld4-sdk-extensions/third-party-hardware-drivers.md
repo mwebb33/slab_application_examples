@@ -87,7 +87,7 @@ Besides the integrated drivers, it is possible to add additional drivers from th
 
 Software components in the mikroSDK 2.0 SDK - Peripheral Drivers are implemented as the required peripheral driver interfaces for the MikroSDK Click plugin.
 
-In general, the software components are named in accordance with the following naming convention.
+In general, the software components are named in accordance with the following naming convention:
 
 **<IC_NAME> - <BOARD_NAME> (<BOARD_VENDOR>) - \<INTERFACE>**
 
@@ -122,7 +122,7 @@ Currently, the following peripherals are supported:
    - SPI
    - UART
 
-In general, drivers in the mikroSDK 2.0 Click library provide interfaces for initializing and configuring the drivers. 
+In general, drivers in the mikroSDK 2.0 Click library provide interfaces for initializing and configuring the drivers: 
 * **<driver_name>_cfg_setup** function
 * **<driver_name>_init** function
 
@@ -147,7 +147,7 @@ The peripheral interface objects provide a handler for the platform-dependent pe
 The approach and steps to integrate drivers for devices using different interfaces are similar. 
 You can find examples in the table below.
 
-**Examples for integrate drivers using different interfaces**
+**Examples of integrating drivers using different interfaces**
 
 |Interface|Circuit|Click Board|Example|
 | --- | --- | --- | --- |
@@ -175,7 +175,7 @@ In the following section, you can find a detailed guideline for integrating a dr
 * **STEP 2** Create a new empty project using an empty project template. (e.g.: **Empty C Project**) 
 * **STEP 3** Install the required mikroSDK 2.0 Peripheral Driver components from the Third-Party Hardware Drivers extension.
 
-  (e.g.: If the selected board using I2C to communicate with the host controller, then install the  [Third Party Hardware Drivers] -> [Services] -> [mikroSDK 2.0 SDK - Peripheral Drivers] -> I2C component.)
+  (e.g.: If the selected board uses I2C to communicate with the host controller, then install the  [Third Party Hardware Drivers] -> [Services] -> [mikroSDK 2.0 SDK - Peripheral Drivers] -> I2C component.)
 
 * **STEP 4** Install additional components your project requires. (e.g.: Log, Assert, etc.)
 
