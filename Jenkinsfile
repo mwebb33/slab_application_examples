@@ -55,7 +55,7 @@ pipeline {
             }
             steps {
                script {
-                  dsc.pushScratch('production')
+                  dsc.pushScratch('production', './dsc_release.yml', false)
                }
             }
         }
