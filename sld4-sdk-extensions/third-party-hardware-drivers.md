@@ -91,7 +91,7 @@ In general, the software components are named in accordance with the following n
 
 **<IC_NAME> - <BOARD_NAME> (<BOARD_VENDOR>) - \<INTERFACE>**
 
-Which includes,
+This includes:
   - **IC_NAME** - The name of the integrated circuit on the external board. (e.g.,: SSD1306)
   - **BOARD_NAME** - The name of the external board. (OLED W Click) 
   - **BOARD_VENDOR** - External board vendor. (e.g.,: Mikroe, Sparkfun, Adafruit, etc.)
@@ -103,11 +103,11 @@ Although, the drivers were mainly developed and tested with specific external bo
 
  SSD1306 - Micro OLED Breakout (Sparkfun) - I2C driver was developed and tested with Sparkfun Micro OLED Breakout board. However, it may be compatible with most OLED displays available on the market, which are controlled by the SSD1306 display controller. To achieve compatibility, changes to the I2C address or display resolution in the configuration by the display board may be required. 
 
-## Integrate new mikroSDK 2.0 Click drivers 
+## Integrate New mikroSDK 2.0 Click Drivers
 
 The Third-Party Hardware Drivers extension provides one-click solution for tested hardware drivers allowing you to integrate 30+ hardware drivers into your project with ease.
 
-In addition to the tested hardware drivers, the extension also provides a peripheral driver wrapper to connect easily the mikroSDK 2.0 Click drivers with Silicon Labs GSDK.
+In addition to the tested hardware drivers, the extension also provides a peripheral driver wrapper to easily connect the mikroSDK 2.0 Click drivers with the Silicon Labs GSDK.
 
 If you are not afraid to do some extra development, thanks to the developed wrapper, over 1,100+ hardware drivers can be added to your project from the mikroSDK 2.0 Click library. This will accelerate the design phase and provide you with a greater level of customer self-serve support.
 
@@ -160,11 +160,11 @@ You can find examples in the table below.
 In the following section, you can find a detailed guideline for integrating a driver from the mikroSDK 2.0 Click library using the I2C interface.
 
 
-### Basic integration steps
+### Basic Integration Steps
 
 * **STEP 0** Select and download a driver from the [mikroSDK 2.0 Click library](https://github.com/MikroElektronika/mikrosdk_click_v2).
 
-  **Make sure that the selected driver using a supported communication interface. See the supported interfaces above.** 
+  **Make sure that the selected driver is using a supported communication interface. See the supported interfaces above.**
 
 * **STEP 1.1 - Optional** Add the Third-Party Hardware Drivers extension. See the instructions in detail [here](/application-examples/<docspace-docleaf-version>/ae-getting-started/how-do-you-use-it#adding-sdk-extensions-for-hardware-drivers).
 
@@ -172,12 +172,12 @@ In the following section, you can find a detailed guideline for integrating a dr
 
 * **STEP 1.3** Open the **Launcher** perspective in Simplicity Studio, and select the target board.
 
-* **STEP 2** Create a new empty project using an empty project template. (e.g.: **Empty C Project**) 
+* **STEP 2** Create a new empty project using an empty project template. (e.g., **Empty C Project**)
 * **STEP 3** Install the required mikroSDK 2.0 Peripheral Driver components from the Third-Party Hardware Drivers extension.
 
-  (e.g.: If the selected board uses I2C to communicate with the host controller, then install the  [Third Party Hardware Drivers] -> [Services] -> [mikroSDK 2.0 SDK - Peripheral Drivers] -> I2C component.)
+  (Note: If the selected board uses I2C to communicate with the host controller, then install the  [Third Party Hardware Drivers] -> [Services] -> [mikroSDK 2.0 SDK - Peripheral Drivers] -> I2C component.)
 
-* **STEP 4** Install additional components your project requires. (e.g.: Log, Assert, etc.)
+* **STEP 4** Install additional components your project requires. (e.g., Log, Assert, etc.)
 
   Default I2CSPM instance is "mikroe", make sure that your I2CSPM instance is configured properly for the target board. 
 
@@ -210,7 +210,7 @@ At this point the new project is ready to integrate the new driver.
 * **STEP 3** Connect your board to the PC via a USB cable
 * **STEP 4** Open the **Launcher** perspective in Simplicity Studio, select the target board
 * **STEP 5** Select the **EXAMPLE PROJECTS & DEMOS** tab in the launcher view
-* **STEP 6** Select an empty template project (e.g.: **Empty C Project**), click on the **Create** button
+* **STEP 6** Select an empty template project (e.g., **Empty C Project**), click on the **Create** button
 * **STEP 7** Give a name for the new project and click on the **Finish** button
 
 **Add required peripheral drivers from the TPHD extension**

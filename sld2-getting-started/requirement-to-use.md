@@ -113,7 +113,7 @@ Mikroe Click Temperature sensor board connected to a Thunderboard Sense 2 via a 
 
 [SparkFun Thing Plus Matter - MGM240P](https://www.sparkfun.com/products/20270) is a development board from the Sparkfun Thing Plus development board family. 
 
-This board integrated tge MGM240P module. The MGM240P wireless module from Silicon Labs® provides secure connectivity for both 802.15.4 with Mesh communication (Thread) and Bluetooth® Low Energy 5.3 protocols. The module comes ready for integration into Silicon Labs' Matter IoT protocol for home automation. SparkFun's Thing Plus development boards are Feather-compatible and include a Qwiic connector for easy integration into our Qwiic Connect System for solderless I2C circuits.
+This board integrated the MGM240P module. The MGM240P wireless module from Silicon Labs® provides secure connectivity for both 802.15.4 with Mesh communication (Thread) and Bluetooth® Low Energy 5.3 protocols. The module comes ready for integration into Silicon Labs' Matter IoT protocol for home automation. SparkFun's Thing Plus development boards are Feather-compatible and include a Qwiic connector for easy integration into our Qwiic Connect System for solderless I2C circuits.
 
 External boards can be easily connected via the onboard Qwiic connector.
 
