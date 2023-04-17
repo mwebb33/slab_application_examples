@@ -95,6 +95,6 @@ class SlccParser(ArtifactParser):
 
 if __name__ == "__main__":
     slcc = SlccParser(
-        "C:\SiliconLabs\Git\platform_hardware_drivers_sdk_extensions_staging\driver\component"
+        r"C:\SiliconLabs\Git\third_party_hw_drivers_extension\driver\component"
     )
     pprint(slcc.generate_dsc_content("./integrated_components.txt"))

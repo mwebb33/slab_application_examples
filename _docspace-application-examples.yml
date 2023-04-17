@@ -1,13 +1,13 @@
 objectType: docSpace
 id: application-examples
-version: "1.0.0"
+version: "1.2.0"
 curators:
     - barna.czukor@silabs.com
     - thanh.ngo@silabs.com
 title: "Application Examples"
 menu:
   items:
-    - docleaf://ae-overview/1.0.0
-    - docleaf://ae-getting-started/1.0.0
-    - docleaf://ae-application-examples/1.0.0
-    - docleaf://ae-sdk-extensions/1.0.0
+    - docleaf://ae-overview/1.2.0
+    - docleaf://ae-getting-started/1.2.0
+    - docleaf://ae-application-examples/1.2.0
+    - docleaf://ae-sdk-extensions/1.2.0
