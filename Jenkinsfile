@@ -63,7 +63,7 @@ pipeline {
             when { branch previewMap.review }
             steps {
                 script {
-                  dsc.pushReleasePreview('review', params.RELEASETICKET,'production')
+                  dsc.pushReleasePreview('review', params.RELEASETICKET,'production', false, './dsc_release.yml')
                 }
             }
         }
@@ -71,7 +71,7 @@ pipeline {
             when { branch previewMap.approve }
             steps {
                 script {
-                  dsc.pushReleasePreview('approve', params.RELEASETICKET,'production')
+                  dsc.pushReleasePreview('approve', params.RELEASETICKET,'production', false, './dsc_release.yml')
                 }
             }
         }
@@ -79,7 +79,7 @@ pipeline {
             when { branch previewMap.production }
             steps {
                script {
-                  dsc.pushReleasePreview('production', params.RELEASETICKET,'production')
+                  dsc.pushReleasePreview('production', params.RELEASETICKET,'production', false, './dsc_release.yml')
                }
             }
         }
