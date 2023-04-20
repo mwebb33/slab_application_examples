@@ -1,6 +1,6 @@
 # Release
 
-releaseTicket: '426350a9-d3d0-4549-828a-36ef68a8d8df'
+releaseTicket: 'da7c198b-93eb-4a83-b11a-2a74cb5a0329'
 docSpaceConfigs:
   - _docspace-application-examples.yml
 docLeafConfigs:
