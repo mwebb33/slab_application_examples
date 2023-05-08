@@ -8,3 +8,4 @@ docLeafConfigs:
   - sld2-getting-started/_doc-leaf-sld2-application-examples-getting-started.yml
   - sld3-application-examples/_doc-leaf-sld3-application-examples-application-examples.yml
   - sld4-sdk-extensions/_doc-leaf-sld4-application-examples-sdk-extensions.yml
+  - sld5-circuitpython/_doc-leaf-sld5-application-examples-circuitpython.yml
