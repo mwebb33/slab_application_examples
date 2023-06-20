@@ -26,9 +26,11 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
  - CMT_8540S_SMT - Buzz 2 Click (Mikroe)
 
 ### **Display & LED**
+ - E-Paper display 1.54" 200x200 dots (Mikroe)
  - MAX6969 - UT-M 7-SEG R Click (Mikroe)
  - SSD1306 - Micro OLED Breakout (Sparkfun) - I2C
  - SSD1306 - OLED W Click (Mikroe) - SPI
+ - SSD1351 - OLED C Click (Mikroe)
 
 ### **Human Machine Interface**
  - A-172-MRQ - Fingerprint 2 Click (Mikroe)
@@ -39,29 +41,46 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
  - W5500 - ETH WIZ Click (Mikroe)
 
 ### **Miscellaneous**
+ - IR Generator (Silabs)
  - LCA717 - Relay 2 Click (Mikroe)
+ - Triac Driver (Silabs)
 
 ### **Motor Control**
+ - A3967 - Stepper Click (Mikroe)
+ - A4988 - Stepper 2 Click (Mikroe)
  - LB11685AV - Brushless 16 Click (Mikroe)
+ - Si8711CC - PWM Driver Click (Mikroe)
+ - TB6549FG - DC Motor 3 Click (Mikroe)
 
 ### **Power Management**
  - MAX17048 - MAX17048EVKIT Evaluation Kits (Maxim)
 
 ### **Sensors**
+ - AD8318 - RF Meter Click (Mikroe)
  - AK9753 - Human Presence Sensor (Sparkfun) - I2C
+ - AMG88XX - Grid-EYE Infrared Array Breakout (Sparkfun)
  - AS7265x - Triad Spectroscopy Sensor (Sparkfun) - I2C
- - BMA400 - Accel 5 Click (Mikroe)
+ - BMA400 - Accel 5 Click (Mikroe) - I2C
+ - BMA400 - Accel 5 Click (Mikroe) - SPI
+ - BME280 - Atmospheric Sensor (Sparkfun)
+ - CCS811 - Air Quality Sensor (Sparkfun)
+ - DPS310 - Pressure 3 Click (Mikroe) - I2C
+ - DPS310 - Pressure 3 Click (Mikroe) - SPI
  - EM3080-W - Barcode 2 Click (Mikroe)
+ - IRA-S210ST01 - PIR Sensor (Silabs)
  - MAX30101 & MAX32664  - Pulse Oximeter and Heart Rate Sensor (Sparkfun)
  - MAX30101 - Heart Rate 4 Click (Mikroe)
  - MAXM86161 - Heart Rate 2 Click (Mikroe)
+ - MLX90632 - IrThermo 3 Click (Mikroe)
  - MLX90640 - IR Array Breakout (Sparkfun)
  - MM5D91-00 - Radar Click (Mikroe)
  - MMA8452Q - Triple Axis Accelerometer Breakout (Sparkfun)
+ - MQ3 - Alcohol Click (Mikroe)
  - MQ7 - CO Click (Mikroe)
  - Qwiic Soil Moisture Sensor (Sparkfun) - I2C
  - SGP40 - Air Quality Sensor (Sparkfun)
  - SHT40 & SGP40 - Environment 2 Click (Mikroe)
+ - SHT40 - Temp&Hum 15 Click (Mikroe)
  - SHTC3 - Temp&Hum 9 Click (Mikroe)
  - Type 5 - Pocket Geiger Radiation (Sparkfun)
  - VCNL4040 - Proximity Sensor (Sparkfun)
@@ -69,7 +88,13 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
  - Water Detect Click (Mikroe)
 
 ### **Services**
+ - FatFS - Generic FAT Filesystem
  - GLIB - OLED Graphics Library
+ - NFC
+   - NFC - Common
+   - NFC - NCI
+   - NFC - NDEF
+   - NFC - Tag
  - mikroSDK 2.0 SDK - Peripheral Drivers
    - ADC
    - Digital I/O
@@ -78,8 +103,16 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
    - SPI
    - UART
 
+### **Storage**
+ - microSD - microSD Click (Mikroe)
+
 ### **Wireless Connectivity**
+ - BG96 - LTE IoT 2 Click (Mikroe)
  - ID-12LA - RFID Reader (Sparkfun) - I2C
+ - LEA-6S - GPS Click (Mikroe)
+ - NT3H2111 - NFC Tag 2 Click (Mikroe) - I2C
+ - PN7150 - NFC 2 Click (Mikroe) - I2C
+
 
 The above drivers are tested and integrated into the extension. 
 
