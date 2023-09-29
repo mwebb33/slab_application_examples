@@ -23,10 +23,13 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
 ## Software Components
 
 ### **Audio & Voice**
- - CMT_8540S_SMT - Buzz 2 Click (Mikroe)
+ - CMT-8540S-SMT - Buzz 2 Click (Mikroe)
+ - MIC 2 Click (Mikroe)
 
 ### **Display & LED**
  - E-Paper display 1.54" 200x200 dots (Mikroe)
+ - ILI9341 - TFT LCD Display (Adafruit) - SPI
+ - ILI9341 - TFT LCD Display (Adafruit) - SPI with DMA
  - MAX6969 - UT-M 7-SEG R Click (Mikroe)
  - SSD1306 - Micro OLED Breakout (Sparkfun) - I2C
  - SSD1306 - OLED W Click (Mikroe) - SPI
@@ -36,6 +39,7 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
  - A-172-MRQ - Fingerprint 2 Click (Mikroe)
  - CAP1166 - Capacitive Touch 2 Click (Mikroe)
  - Qwiic Joystick (Sparkfun)
+ - Touch Screen (Analog)
 
 ### **Interface**
  - W5500 - ETH WIZ Click (Mikroe)
@@ -49,6 +53,7 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
  - A3967 - Stepper Click (Mikroe)
  - A4988 - Stepper 2 Click (Mikroe)
  - LB11685AV - Brushless 16 Click (Mikroe)
+ - PCA9685 - Servo Click (Mikroe)
  - Si8711CC - PWM Driver Click (Mikroe)
  - TB6549FG - DC Motor 3 Click (Mikroe)
 
@@ -63,33 +68,45 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
  - BMA400 - Accel 5 Click (Mikroe) - I2C
  - BMA400 - Accel 5 Click (Mikroe) - SPI
  - BME280 - Atmospheric Sensor (Sparkfun)
+ - BME688 - Environment 3 Click (Mikroe) - I2C
+ - BME688 - Environment 3 Click (Mikroe) - SPI
  - CCS811 - Air Quality Sensor (Sparkfun)
  - DPS310 - Pressure 3 Click (Mikroe) - I2C
  - DPS310 - Pressure 3 Click (Mikroe) - SPI
  - EM3080-W - Barcode 2 Click (Mikroe)
+ - EMG Click (Mikroe)
+ - FSR400 - Force 3 Click (Mikroe)
  - IRA-S210ST01 - PIR Sensor (Silabs)
  - MAX30101 & MAX32664  - Pulse Oximeter and Heart Rate Sensor (Sparkfun)
  - MAX30101 - Heart Rate 4 Click (Mikroe)
  - MAXM86161 - Heart Rate 2 Click (Mikroe)
+ - MCP606 - Water Detect Click (Mikroe)
+ - ML8511A - UV Click (Mikroe)
  - MLX90632 - IrThermo 3 Click (Mikroe)
  - MLX90640 - IR Array Breakout (Sparkfun)
  - MM5D91-00 - Radar Click (Mikroe)
  - MMA8452Q - Triple Axis Accelerometer Breakout (Sparkfun)
+ - MQ131 - Ozone 2 Click (Mikroe)
  - MQ3 - Alcohol Click (Mikroe)
  - MQ7 - CO Click (Mikroe)
+ - Pocket Geiger Radiation - Type 5 (Sparkfun)
  - Qwiic Soil Moisture Sensor (Sparkfun) - I2C
  - SGP40 - Air Quality Sensor (Sparkfun)
  - SHT40 & SGP40 - Environment 2 Click (Mikroe)
  - SHT40 - Temp&Hum 15 Click (Mikroe)
  - SHTC3 - Temp&Hum 9 Click (Mikroe)
- - Type 5 - Pocket Geiger Radiation (Sparkfun)
+ - TSD-10 - Turbidity Click (Mikroe)
  - VCNL4040 - Proximity Sensor (Sparkfun)
  - VL53L1X - Distance Sensor Breakout (Sparkfun)
- - Water Detect Click (Mikroe)
 
 ### **Services**
+ - BTHome v2
+ - BTHome v2 - Server
+ - EnOcean Switch Proxy Server
  - FatFS - Generic FAT Filesystem
  - GLIB - OLED Graphics Library
+ - LIN bus slave
+ - LVGL - Graphics Library
  - NFC
    - NFC - Common
    - NFC - NCI
@@ -112,6 +129,7 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
  - LEA-6S - GPS Click (Mikroe)
  - NT3H2111 - NFC Tag 2 Click (Mikroe) - I2C
  - PN7150 - NFC 2 Click (Mikroe) - I2C
+
 
 
 The above drivers are tested and integrated into the extension. 
