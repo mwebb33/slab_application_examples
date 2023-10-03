@@ -1,5 +1,5 @@
 
-# Building CircuitPython
+# Building CircuitPython Firmware
 The CircuitPython port for xG24 is readily accessible through [Adafruit's CircuitPython repository](https://github.com/adafruit/circuitpython/tree/main/ports/silabs).
 
 ## How this port is organized:
