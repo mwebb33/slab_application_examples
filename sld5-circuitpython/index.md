@@ -1,4 +1,4 @@
-# Circuitpython Getting Started Guide
+# CircuitPython Getting Started Guide
 - [Introduction](circuitpython_overview.md)
-- [Building CircuitPython](building_circuitpython.md)
-- [Running Circuitpython](running_circuitpython.md)
+- [Building Firmware](building_circuitpython.md)
+- [Running Applications](running_circuitpython.md)

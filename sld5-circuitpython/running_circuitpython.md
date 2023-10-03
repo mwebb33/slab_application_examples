@@ -1,4 +1,4 @@
-# Running Circuitpython Applications
+# Running CircuitPython Applications
 ## Dowload CircuitPython Firmware 
 
 Official binaries for all supported boards are available through [circuitpython.org/downloads](https://circuitpython.org/downloads?q=silabs). The site includes stable,unstable and continuous builds.
