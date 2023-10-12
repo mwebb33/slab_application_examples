@@ -20,7 +20,6 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
 
 **See the [instructions](/application-examples/<docspace-docleaf-version>/ae-getting-started/how-do-you-use-it#adding-sdk-extensions-for-hardware-drivers) of the Getting Started section for more information.**
 
-## Software Components
 
 ### **Audio & Voice**
  - CMT-8540S-SMT - Buzz 2 Click (Mikroe)
@@ -42,11 +41,13 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
  - Touch Screen (Analog)
 
 ### **Interface**
+ - STN1110 - OBDII Click (Mikroe)
  - W5500 - ETH WIZ Click (Mikroe)
 
 ### **Miscellaneous**
  - IR Generator (Silabs)
  - LCA717 - Relay 2 Click (Mikroe)
+ - RNG Click (Mikroe)
  - Triac Driver (Silabs)
 
 ### **Motor Control**
@@ -64,6 +65,7 @@ This extension consumes the [mikroSDK Click Plugin](https://github.com/MikroElek
  - AD8318 - RF Meter Click (Mikroe)
  - AK9753 - Human Presence Sensor (Sparkfun) - I2C
  - AMG88XX - Grid-EYE Infrared Array Breakout (Sparkfun)
+ - AS3935 - Thunder Click (Mikroe)
  - AS7265x - Triad Spectroscopy Sensor (Sparkfun) - I2C
  - BMA400 - Accel 5 Click (Mikroe) - I2C
  - BMA400 - Accel 5 Click (Mikroe) - SPI
