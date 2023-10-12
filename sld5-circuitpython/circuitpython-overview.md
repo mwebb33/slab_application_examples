@@ -8,13 +8,13 @@ We have already successfully ported CircuitPython to the Silabs xG24, making thi
 
 ## Systems Overview
 This is an implementation of CircuitPython for the xG24.
-![Architecture](doc/cp_architecture.png)
+![Architecture](doc/cp-architecture.png)
 On the xG24 chips, CircuitPython is run on a thread in the Dynamic Multiprotocol system. The RTOS can be selected between FreeRTOS or Micrium OS. There are also other threads for Zigbee, BLE, Proprietary corresponding with protocols. Currently, only BLE is supported.
 
 Supporting protocols requires writing additional custom modules in shared-bindings.
 
 Since the system uses the SLC tool to create the project, configuring the components of the Gecko SDK is quite easy.
-![slc](doc/cp_slc.png)
+![slc](doc/cp-slc.png)
 The system utilizes the SLC tool to generate the make file. A separate slcc file is required for each board.
 
 ## Supported Kits
