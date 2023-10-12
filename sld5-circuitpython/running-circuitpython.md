@@ -20,7 +20,7 @@ To flash the firmware into the xG24 kit using Simplicity Commander, follow these
 
 **3.** Initiate the flashing process to upload the firmware to the xG24 kit.
 
-![Commander](doc/cp_commander.png)
+![Commander](doc/cp-commander.png)
 
 ## Getting a REPL prompt ##
 
@@ -65,7 +65,7 @@ At the boot stage, two scripts will be run (if not booting in safe mode). First,
 After code.py has finished executing, a REPL prompt will be presented on the serial port. Other files can also be executed by using the **Thonny** editors or using **Ampy** tool.
 
 ## Thonny ##
-![Thony](doc/cp_thony.png)
+![Thony](doc/cp-thony.png)
 
 ### Download and install Thonny
 
@@ -75,35 +75,35 @@ After code.py has finished executing, a REPL prompt will be presented on the
 
   * Open the interpreter configuration
 
-    ![Com](doc/cp_thonny_com.png)
+    ![Com](doc/cp-thonny-com.png)
   
   * Select Port Jlink CDC UART Port 
 
-    ![Interpreter](doc/cp_thonny_interpreter.png)
+    ![Interpreter](doc/cp-thonny-interpreter.png)
 
 ### Upload the project files
 
   * Show Files and Shell views
 
-    ![ShowFiles](doc/cp_thonny_files.png)
+    ![ShowFiles](doc/cp-thonny-files.png)
 
   * Select and upload application files from the device_root folder
 
-    ![UploadFiles](doc/cp_thonny_upload.png)
+    ![UploadFiles](doc/cp-thonny-upload.png)
 
   * The application files are uploaded to the target device
 
-    ![UploadedFiles](doc/cp_thonny_uploaded.png)
+    ![UploadedFiles](doc/cp-thonny-uploaded.png)
 
 ### Run the application
 
   * Open the code.py from the target device and push Run current script (F5) button
     
-    ![RunApplication](doc/cp_thonny_open_code.png)
+    ![RunApplication](doc/cp-thonny-open-code.png)
 
   * The application should be running on the target device, you can check the log output in the Shell window
     
-    ![RunApplicationLog](doc/cp_thonny_run_code.png)
+    ![RunApplicationLog](doc/cp-thonny-run-code.png)
 
 
 > **_NOTE:_** The application files are permanently stored on the target device, so the uploaded application should run automatically if the target device is reset or powered up while the serial prompt is not connected via Thonny or other tools like Ampy.
