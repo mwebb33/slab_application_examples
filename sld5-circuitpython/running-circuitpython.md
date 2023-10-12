@@ -20,7 +20,7 @@ To flash the firmware into the xG24 kit using Simplicity Commander, follow these
 
 **3.** Initiate the flashing process to upload the firmware to the xG24 kit.
 
-![Commander](cp_commander.png)
+![Commander](doc/cp_commander.png)
 
 ## Getting a REPL prompt ##
 
