@@ -1,16 +1,16 @@
 # Running CircuitPython Applications
 ## Dowload CircuitPython Firmware 
 
-Official binaries for all supported boards are available through [circuitpython.org/downloads](https://circuitpython.org/downloads?q=silabs). The site includes stable,unstable and continuous builds.
+Official binaries for all supported boards are available through [circuitpython.org/downloads](https://circuitpython.org/downloads?q=silabs). The site includes stable, unstable, and continuous builds.
 
-If you want to make changes, you might clone and re-build the source and firmware.bin file can be found in the build folder corresponding to the appropriate board, such as build-sparkfun_thingplus_matter_mgm240p_brd2704a
+If making changes, clone and re-build the source. The firmware.bin file can be found in the build folder corresponding to the appropriate board, such as build-sparkfun_thingplus_matter_mgm240p_brd2704a.
 
 > **_NOTE:_** The examples in this repository require CircuitPython v8.2.0 or higher.
 
-## Flash firmware
+## Flash Firmware
 
 To flash the firmware file into the board, you need to use Simplicity Commander.
-You can install Simplicity Commander using Simplicity Studio or downloading standalone version by following [this Knowledge Article](https://community.silabs.com/s/article/simplicity-commander?language=en_US).
+You can install Simplicity Commander using Simplicity Studio or download a standalone version by following [this Knowledge Article](https://community.silabs.com/s/article/simplicity-commander?language=en_US).
 
 To flash the firmware into the xG24 kit using Simplicity Commander, follow these simple steps:
 
@@ -22,13 +22,13 @@ To flash the firmware into the xG24 kit using Simplicity Commander, follow these
 
 ![Commander](doc/cp-commander.png)
 
-## Getting a REPL prompt ##
+## Getting a REPL Prompt ##
 
 Connect the devkit to the PC via the USB cable. The board uses serial for REPL access and debugging because the EFR32 chips has no USB support.
 
 ### Windows ###
 
-On Windows, we need to install a serial console e.g., PuTTY, MobaXterm. The JLink CDC UART Port can be found in the Device Manager.
+On Windows, we need to install a serial console, e.g., PuTTY, MobaXterm. The JLink CDC UART Port can be found in the Device Manager.
 
 ### Linux ###
 
@@ -40,7 +40,7 @@ Then note down the correct name and substitute com-port-name in the followin
 ```bash
 $ screen /dev/'com-port-name'
 ```
-### Using the REPL prompt ###
+### Using the REPL Prompt ###
 
 After flashing the firmware to the board, at your first connecting to the board, you might see a blank screen. Press enter and you should be presented with a Circuitpython prompt, >>>. If not, try to reset the board (see instructions below).
 
@@ -54,24 +54,24 @@ Hello world
 
 If something goes wrong with the board, you can reset it. Pressing CTRL+D when the prompt is open performs a soft reset.
 
-## Recommended editors ##
+## Recommended Editors ##
 
 **Thonny** is a simple code editor that works with the Adafruit CircuitPython boards. 
 
-### Running CircuitPython scripts ###
+### Running CircuitPython Scripts ###
 
-At the boot stage, two scripts will be run (if not booting in safe mode). First, the file  boot.py  will be executed. The file **boot.py** can be used to perform the initial setup. Then, after boot.py has been completed, the file **code.py** will be executed.  
+At the boot stage, two scripts will be run (if not booting in safe mode). First, the file  boot.py will be executed. The file **boot.py** can be used to perform the initial setup. Then, after boot.py has been completed, the file **code.py** will be executed.  
 
-After code.py has finished executing, a REPL prompt will be presented on the serial port. Other files can also be executed by using the **Thonny** editors or using **Ampy** tool.
+After code.py has finished executing, a REPL prompt will be presented on the serial port. Other files can also be executed by using **Thonny** editors or using the **Ampy** tool.
 
 ## Thonny ##
 ![Thony](doc/cp-thony.png)
 
-### Download and install Thonny
+### Download and Install Thonny
 
   * [Download Thonny](https://thonny.org/)
 
-### Connect to the serial prompt of the target board
+### Connect to the Serial Prompt of the Target Board
 
   * Open the interpreter configuration
 
@@ -81,7 +81,7 @@ After code.py has finished executing, a REPL prompt will be presented on the
 
     ![Interpreter](doc/cp-thonny-interpreter.png)
 
-### Upload the project files
+### Upload the Project Files
 
   * Show Files and Shell views
 
@@ -95,7 +95,7 @@ After code.py has finished executing, a REPL prompt will be presented on the
 
     ![UploadedFiles](doc/cp-thonny-uploaded.png)
 
-### Run the application
+### Run the Application
 
   * Open the code.py from the target device and push Run current script (F5) button
     
