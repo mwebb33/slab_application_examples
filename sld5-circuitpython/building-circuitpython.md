@@ -2,7 +2,7 @@
 # Building CircuitPython Firmware
 The CircuitPython port for xG24 is readily accessible through [Adafruit's CircuitPython repository](https://github.com/adafruit/circuitpython/tree/main/ports/silabs).
 
-## How this port is organized:
+## How this Port is Organized
 
 - **boards/** contains the configuration files for each development board and breakout available on the port, as well as system files and both shared and SoC-specific linker files. Board configuration includes a pin mapping of the board, oscillator information, board-specific build flags, and setup for some other peripheral where applicable.
 - **common-hal/** contains the port-specific module implementations, used by shared-module and shared-bindings.
@@ -28,7 +28,7 @@ $ sudo apt install default-jre gcc-arm-none-eabi python3 python3-pip git git-lfs
 $ sudo python -m pip install --upgrade pip
 ```
 
-## Build instructions
+## Build Instructions
 
 Ensure your clone of Circuitpython is ready to build by following the [guide on the Adafruit Website](https://learn.adafruit.com/building-circuitpython/build-circuitpython). This includes installing the toolchain, synchronizing submodules, and running `mpy-cross`.
 
@@ -42,7 +42,7 @@ Checkout the branch or tag you want to build. For example:
 ```bash
 $  git checkout main
 ```
-Following the guideline below to install required packages for SLC tool:
+Follow the guideline below to install required packages for SLC tool:
     https://www.silabs.com/documents/public/user-guides/ug520-software-project-generation-configuration-with-slc-cli.pdf
 
 Once the one-time build tasks are complete, you can build at any time by navigating to the port directory:
@@ -53,7 +53,7 @@ You may also build with certain flags available in the makefile, depending on yo
 ```bash
 $ make BOARD=explorerkit_xg24_brd2703a DEBUG=1
 ```
-Clean project by using:
+Clean the project by using:
 ```bash
 $ make BOARD=explorerkit_xg24_brd2703a clean
 ```
