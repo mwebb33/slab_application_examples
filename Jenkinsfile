@@ -1,5 +1,5 @@
 // see https://www.jenkins.io/doc/book/pipeline/shared-libraries/
-@Library('dsc-shared-library')
+@Library('dsc-shared-library') _
 
 /*
 * This is a standard template some teams might want to modify this or use different Jenkins processes.
@@ -27,11 +27,12 @@ def previewMap = [review: "review", approve: "approve", production: "master"]
 
 
 pipeline {
-    agent {label 'linux'}
+    agent {label 'suds-cm-slave-spot'}
     parameters {
      string defaultValue: '', description: 'Provide a Release Ticket ID if you want to move to preview.', name: 'RELEASETICKET'
     }
      options {
+       timestamps()
        buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
        timeout(time: 30, unit: "MINUTES")
     }
@@ -55,7 +56,7 @@ pipeline {
             }
             steps {
                script {
-                  dsc.pushScratch('production', './dsc_release.yml', false)
+                  dsc.pushScratch('production')
                }
             }
         }
