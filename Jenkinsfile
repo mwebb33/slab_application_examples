@@ -18,13 +18,11 @@
 
 def previewMap = [review: "review", approve: "approve", production: "master"]
 
-
 /*
 * =========================================
 * should not have to update anything below
 * =========================================
 */
-
 
 pipeline {
     agent {label 'suds-cm-slave-spot'}
