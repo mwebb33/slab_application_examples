@@ -1,35 +1,13 @@
+// see https://confluence.silabs.com/display/DocsDev/Jenkins+Process+Set+Up
 // see https://www.jenkins.io/doc/book/pipeline/shared-libraries/
 @Library('dsc-shared-library') _
-
-/*
-* This is a standard template some teams might want to modify this or use different Jenkins processes.
-* This is a suggested pattern to follow.  Abusing the workflow described in https://confluence.silabs.com/display/DocsDev/Publish+Workflow
-* could lead into delays of publishing your content in production.
-* Always consult TECHPubs and DocPublishers before you build a pattern outside of this template
-*/
-
-
-/*
-* previewMap is the mapping to the preview environments.  Please review https://confluence.silabs.com/display/DocsDev/Publish+Workflow
-* These branch names should be consistent to map a release to.  Please review TECH PUB policies or reach out to a DocPublisher for more info
-* Understand you cannot push to Production without pushing to Review 1st then Approve 2nd
-* It is recommended that you match the Review ,Approve and Production to the same branches. May not work for all use cases
-*/
-
-def previewMap = [review: "review", approve: "approve", production: "master"]
-
-/*
-* =========================================
-* should not have to update anything below
-* =========================================
-*/
-
+ 
 pipeline {
     agent {label 'suds-cm-slave-spot'}
     parameters {
-     string defaultValue: '', description: 'Provide a Release Ticket ID if you want to move to preview.', name: 'RELEASETICKET'
+       string defaultValue: null, description: 'Provide a Release Ticket ID if you want to move to preview.', name: 'RELEASETICKET'
     }
-     options {
+    options {
        timestamps()
        buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
        timeout(time: 30, unit: "MINUTES")
@@ -44,41 +22,27 @@ pipeline {
         }
         stage('release to scratch') {
             when {
-              not {
-                 anyOf {
-                    branch previewMap.review;
-                    branch previewMap.approve;
-                    branch previewMap.production
-                 }
-              }
+                not {
+                    expression {
+                        return params.RELEASETICKET
+                    }
+                }
             }
             steps {
                script {
-                  dsc.pushScratch('production')
+                    dsc.pushScratch('production')
                }
             }
         }
-        stage('release to review preview') {
-            when { branch previewMap.review }
-            steps {
-                script {
-                  dsc.pushReleasePreview('review', params.RELEASETICKET,'production')
+        stage('release ticket found, pushing to preview-env') {
+            when {
+                expression {
+                    return params.RELEASETICKET
                 }
             }
-        }
-        stage('release to approve preview') {
-            when { branch previewMap.approve }
-            steps {
-                script {
-                  dsc.pushReleasePreview('approve', params.RELEASETICKET,'production')
-                }
-            }
-        }
-        stage('release to production preview') {
-            when { branch previewMap.production }
             steps {
                script {
-                  dsc.pushReleasePreview('production', params.RELEASETICKET,'production')
+                    dsc.pushReleasePreview('production', params.RELEASETICKET, 'production')
                }
             }
         }
