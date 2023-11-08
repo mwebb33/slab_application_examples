@@ -14,7 +14,7 @@ objectType: docLeaf
 # type: string
 # required: true
 #
-id: ae-sdk-extensions
+id: ae-circuitpython
 
 # Controls access to this DocLeaf. If 'prerelease', access will be limited
 # to properly authenticated users.
@@ -61,7 +61,7 @@ version: "1.3.0"
 # required: true
 #
 authors:
-    - daniel.nemeth@silabs.com
+    - chat.nguyen@silabs.com
 
 # Specifies the type of source DocContent.
 #
@@ -76,7 +76,7 @@ contentType: markdown
 # type: string
 # required: true
 #
-title: "SDK Extensions"
+title: "CircuitPython"
 
 # The description of this DocLeaf. Will exist as metadata, but appear publicly
 # in places like Simplicity Studio or silabs.com.
@@ -131,4 +131,6 @@ menu:
   # required: false
   #
   items:
-    - Third Party Hardware Drivers: ./third-party-hardware-drivers.md
+    - Introduction: ./circuitpython-overview.md
+    - Building Firmware: ./building-circuitpython.md
+    - Running Applications: ./running-circuitpython.md

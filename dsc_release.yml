@@ -1,6 +1,6 @@
 # Release
 
-releaseTicket: 'da7c198b-93eb-4a83-b11a-2a74cb5a0329'
+releaseTicket: '5249a128-f994-4a1d-8e23-9aa1f91a9fdf'
 docSpaceConfigs:
   - _docspace-application-examples.yml
 docLeafConfigs:
@@ -8,3 +8,4 @@ docLeafConfigs:
   - sld2-getting-started/_doc-leaf-sld2-application-examples-getting-started.yml
   - sld3-application-examples/_doc-leaf-sld3-application-examples-application-examples.yml
   - sld4-sdk-extensions/_doc-leaf-sld4-application-examples-sdk-extensions.yml
+  - sld5-circuitpython/_doc-leaf-sld5-application-examples-circuitpython.yml
